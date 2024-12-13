@@ -31,13 +31,18 @@ jobs:
       # Step 4: Copy the contents of the output folder from main branch to docs folder in gh-page branch
       - name: Copy Output to docs folder
         run: |
-          cp -r ../main/output/* docs/  # Copy all files from Output folder in main branch to docs folder
+          cp -r output/* docs/  # Copy all files from Output folder in main branch to docs folder
 
-      # Step 5: Commit and push changes to the gh-page branch
+      # Step 5: Add .nojekyll to disable Jekyll processing
+      - name: Add .nojekyll file
+        run: |
+          touch docs/.nojekyll  # Create the .nojekyll file to disable Jekyll
+
+      # Step 6: Commit and push changes to the gh-page branch
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add docs/
+          git add docs/ docs/.nojekyll
           git commit -m "Deploy website from main branch output to gh-page branch docs folder"
           git push origin gh-page --force

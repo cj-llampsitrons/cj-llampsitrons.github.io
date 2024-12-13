@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repository (main branch)
+      # Step 1: Checkout main branch (your working branch)
       - name: Checkout main branch
         uses: actions/checkout@v3
 
@@ -20,12 +20,13 @@ jobs:
           git fetch --all
           git checkout gh-pages || git checkout --orphan gh-pages
 
-      # Step 3: Clean up docs folder
-      - name: Clean docs folder
+      # Step 3: Ensure docs folder exists and clean it up
+      - name: Create and clean docs folder
         run: |
-          rm -rf docs/*  # Remove all content from docs folder
+          mkdir -p docs  # Create docs folder if it doesn't exist
+          rm -rf docs/*  # Clean docs folder to prepare for new files
 
-      # Step 4: Copy the contents of the output folder to the docs folder
+      # Step 4: Copy the contents of the output folder to docs folder
       - name: Copy Output to docs folder
         run: |
           cp -r output/* docs/  # Copy all files from Output to docs folder

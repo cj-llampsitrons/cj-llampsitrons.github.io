@@ -21,15 +21,20 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Setup Pages for deployment
         uses: actions/configure-pages@v5
 
-      - name: Deploy files from output folder to GitHub Pages
+      - name: Upload output folder as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages-artifact
+          path: ./output  # The folder you're treating as an artifact
+
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          # Deploy the contents of the 'output' folder directly
-          path: './output'
+          artifact_name: github-pages-artifact  # Use the same name as the uploaded artifact

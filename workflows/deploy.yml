@@ -14,11 +14,11 @@ jobs:
       - name: Checkout main branch
         uses: actions/checkout@v3
 
-      # Step 2: Checkout gh-pages branch (create if it doesn't exist)
-      - name: Checkout gh-pages branch
+      # Step 2: Checkout gh-page branch (create if it doesn't exist)
+      - name: Checkout gh-page branch
         run: |
           git fetch --all
-          git checkout gh-pages || git checkout --orphan gh-pages
+          git checkout gh-page || git checkout --orphan gh-page
 
       # Step 3: Ensure docs folder exists and clean it up
       - name: Create and clean docs folder
@@ -31,11 +31,11 @@ jobs:
         run: |
           cp -r output/* docs/  # Copy all files from Output to docs folder
 
-      # Step 5: Commit and push changes to gh-pages branch
+      # Step 5: Commit and push changes to gh-page branch
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add docs/
           git commit -m "Deploy website to docs folder"
-          git push origin gh-pages --force
+          git push origin gh-page --force

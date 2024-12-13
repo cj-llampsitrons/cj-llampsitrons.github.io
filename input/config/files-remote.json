@@ -107,22 +107,22 @@
     {
         "path": "/authors/llamps-i-trons/index.html",
         "type": "file",
-        "md5": "122556f9ca5aba189af4910e122265f0"
+        "md5": "8ca589a6840fee9d9339a1f4c761ce6f"
     },
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "d7d80b8bd5a8fd0edb28f86f20bccf73"
+        "md5": "e1c26d3193e5ac260f34bcb2ed6f421f"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "e73d152d02caaad73ce9aa028979dbe6"
+        "md5": "a0315b6a80172f59b0bf3f6d8b8a5468"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "821612717f65be13b1286524d791daeb"
+        "md5": "bbf8aa4726fcb784e146d5ed7d199833"
     },
     {
         "path": "robots.txt",
@@ -132,7 +132,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "e52c2a8de2adca0fb15cfa49b86bb540"
+        "md5": "4c81ec5d3573673e9be606a5f248b3ac"
     },
     {
         "path": "sitemap.xsl",
@@ -152,11 +152,16 @@
     {
         "path": "test-2.html",
         "type": "file",
-        "md5": "7e3c9abd40924f128cb842580bce767c"
+        "md5": "4c1520cef3766ac0fa0847a3a56b5534"
+    },
+    {
+        "path": "test-3.html",
+        "type": "file",
+        "md5": "48b60af60b1e0f2102e59e9c8ca48ac3"
     },
     {
         "path": "test.html",
         "type": "file",
-        "md5": "ff8b13f728abfdf6c30615f263f551b2"
+        "md5": "c21872cdb5f0f6a23a4abd16296c5dcc"
     }
 ]

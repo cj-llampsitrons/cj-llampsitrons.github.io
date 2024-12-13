@@ -3,7 +3,7 @@
     <title>cj.llampsitrons.github.io</title>
     <link href="https://cj-llampsitrons.github.io/feed.xml" rel="self" />
     <link href="https://cj-llampsitrons.github.io" />
-    <updated>2024-12-13T12:32:33+01:00</updated>
+    <updated>2024-12-13T12:39:42+01:00</updated>
     <author>
         <name>Llamps i Trons</name>
     </author>
@@ -90,22 +90,18 @@
         </content>
     </entry>
     <entry>
-        <title>Test</title>
+        <title>Comptador</title>
         <author>
             <name>Llamps i Trons</name>
         </author>
-        <link href="https://cj-llampsitrons.github.io/test.html"/>
-        <id>https://cj-llampsitrons.github.io/test.html</id>
+        <link href="https://cj-llampsitrons.github.io/comptador.html"/>
+        <id>https://cj-llampsitrons.github.io/comptador.html</id>
 
-        <updated>2024-12-13T10:30:31+01:00</updated>
-            <summary>
-                <![CDATA[
-                    Test
-                ]]>
-            </summary>
+        <updated>2024-12-13T12:39:42+01:00</updated>
+            <summary></summary>
         <content type="html">
             <![CDATA[
-                <p>Test</p>
+                <div class="post__iframe"><iframe loading="lazy" style="width: 100%; height: 100vh; border: none;" src="https://cj-llampsitrons.github.io/comptador"></iframe></div>
             ]]>
         </content>
     </entry>

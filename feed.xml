@@ -3,12 +3,32 @@
     <title>cj.llampsitrons.github.io</title>
     <link href="https://cj-llampsitrons.github.io/feed.xml" rel="self" />
     <link href="https://cj-llampsitrons.github.io" />
-    <updated>2024-12-13T11:56:59+01:00</updated>
+    <updated>2024-12-13T12:02:56+01:00</updated>
     <author>
         <name>Llamps i Trons</name>
     </author>
     <id>https://cj-llampsitrons.github.io</id>
 
+    <entry>
+        <title>Test 3</title>
+        <author>
+            <name>Llamps i Trons</name>
+        </author>
+        <link href="https://cj-llampsitrons.github.io/test-3.html"/>
+        <id>https://cj-llampsitrons.github.io/test-3.html</id>
+
+        <updated>2024-12-13T12:02:56+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Test 3
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Test 3</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Test 2</title>
         <author>

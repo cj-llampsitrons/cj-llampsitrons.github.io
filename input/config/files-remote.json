@@ -107,27 +107,27 @@
     {
         "path": "/authors/llamps-i-trons/index.html",
         "type": "file",
-        "md5": "43834e047d9978efaeb6708e1d2fc0d9"
+        "md5": "c1c2b557c0c6d4b60b416b3054a21501"
     },
     {
         "path": "comptador.html",
         "type": "file",
-        "md5": "86332c784b5d32773562c65dbded0136"
+        "md5": "19ffd210c94a695f473a6532267803ac"
     },
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "f32d049bda2c8bf9462ffbac1343d739"
+        "md5": "69256ebc291dbf93978bf24df5176b2f"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "2d7ff57794ba7ff9931de9a65527dfa0"
+        "md5": "3217db2f3ea3bddf9b9ee3bfb3e76d3d"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "aae6343fd1dbaba54bd04681a02c66e4"
+        "md5": "5d088afac1b441e30e4d171ecc378a1f"
     },
     {
         "path": "robots.txt",
@@ -137,7 +137,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "d2163bd46336d04089b2890fd2d7afe4"
+        "md5": "efa42100df2387058ae997dfb314cdd7"
     },
     {
         "path": "sitemap.xsl",
@@ -157,7 +157,7 @@
     {
         "path": "test-2.html",
         "type": "file",
-        "md5": "cd4e732bbad68391a602a7c95e09a85e"
+        "md5": "b6493329fe96fabd7f8f8427ffed7bf8"
     },
     {
         "path": "test-3.html",

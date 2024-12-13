@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Copy files to gh-page branch
 
 on:
   push:
@@ -6,43 +6,37 @@ on:
       - main  # Trigger on push to the main branch
 
 jobs:
-  deploy:
+  copy-files:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the main branch
+      # Step 1: Checkout the main branch (where output is located)
       - name: Checkout main branch
         uses: actions/checkout@v3
         with:
           ref: main
 
-      # Step 2: Checkout the gh-page branch (create if it doesn't exist)
+      # Step 2: Checkout the gh-page branch (create it if it doesn't exist)
       - name: Checkout gh-page branch
         run: |
           git fetch --all
           git checkout gh-page || git checkout --orphan gh-page
 
-      # Step 3: Ensure docs folder exists and clean it up
-      - name: Create and clean docs folder
+      # Step 3: Clean the docs folder to prepare for the new files
+      - name: Clean docs folder
         run: |
-          mkdir -p docs  # Create docs folder if it doesn't exist
           rm -rf docs/*  # Clean docs folder to prepare for new files
 
-      # Step 4: Copy the contents of the output folder from main branch to docs folder in gh-page branch
-      - name: Copy Output to docs folder
+      # Step 4: Copy the contents of the output folder (from main) to docs (in gh-page)
+      - name: Copy files from output to docs
         run: |
-          cp -r output/* docs/  # Copy all files from Output folder in main branch to docs folder
+          cp -r output/* docs/  # Copy all files from Output folder to docs folder
 
-      # Step 5: Add .nojekyll to disable Jekyll processing
-      - name: Add .nojekyll file
-        run: |
-          touch docs/.nojekyll  # Create the .nojekyll file to disable Jekyll
-
-      # Step 6: Commit and push changes to the gh-page branch
+      # Step 5: Commit and push changes to the gh-page branch
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add docs/ docs/.nojekyll
-          git commit -m "Deploy website from main branch output to gh-page branch docs folder"
+          git add docs/
+          git commit -m "Copy files from output to docs"
           git push origin gh-page --force

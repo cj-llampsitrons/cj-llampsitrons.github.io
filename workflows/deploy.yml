@@ -3,36 +3,37 @@ name: Deploy to Public Branch
 on:
   push:
     branches:
-      - main  # Trigger this workflow when pushing to the `main` branch
+      - main  # Trigger on changes to the main branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the code from the main branch
+      # Step 1: Checkout the main branch
       - name: Checkout main branch
         uses: actions/checkout@v3
         with:
           ref: main
 
-      # Checkout the public branch (where you want to copy the files to)
+      # Step 2: Checkout the public branch where files will be copied
       - name: Checkout public branch
         uses: actions/checkout@v3
         with:
           ref: public
           path: public
 
-      # Ensure Jekyll is not triggered by adding a .nojekyll file
+      # Step 3: Disable Jekyll by adding .nojekyll file
       - name: Disable Jekyll build
-        run: touch public/.nojekyll
+        run: |
+          touch public/.nojekyll
 
-      # Sync the content of the `output` folder from the main branch to the public branch
-      - name: Sync output folder content
+      # Step 4: Sync files from the `output` folder of the main branch to the public branch
+      - name: Sync output folder to public branch
         run: |
           rsync -av --exclude='.git' --exclude='.github' output/ public/
 
-      # Commit and push changes to the public branch
+      # Step 5: Commit and push changes to the public branch
       - name: Commit and push changes
         run: |
           cd public

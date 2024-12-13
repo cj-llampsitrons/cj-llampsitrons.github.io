@@ -8,6 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # Grant write access to repository contents (needed for pushing)
 
     steps:
       - name: Checkout the repository

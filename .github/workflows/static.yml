@@ -3,22 +3,22 @@ name: Deploy Static Website
 on:
   push:
     branches:
-      - main # or 'master', depending on your default branch
+      - main  # or 'master', depending on your default branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout the repository
-      uses: actions/checkout@v3
+      - name: Checkout the repository
+        uses: actions/checkout@v3
 
-    - name: Set up GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./output  # This is the folder you want to deploy from
-        publish_branch: gh-pages  # The branch to deploy to
-        user_name: 'github-actions'
-        user_email: 'github-actions@github.com'
-        commit_message: 'Deploy static site to GitHub Pages'
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Correctly use the GITHUB_TOKEN
+          publish_dir: ./output  # The directory to publish from
+          publish_branch: gh-pages  # The branch to publish to
+          user_name: 'github-actions'
+          user_email: 'github-actions@github.com'
+          commit_message: 'Deploy static site to GitHub Pages'

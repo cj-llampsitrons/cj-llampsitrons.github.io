@@ -2,7 +2,7 @@
     "uuid": "uuid-1734082177348-944842226",
     "name": "cj-llampsitronsgithubio",
     "displayName": "cj.llampsitrons.github.io",
-    "synced": false,
+    "synced": "synced",
     "logo": {
         "color": 1,
         "icon": "web-pizza"
@@ -207,9 +207,10 @@
             "prefix": ""
         },
         "manual": {
-            "output": "catalog",
+            "output": "zip-archive",
             "outputDirectory": ""
         }
     },
-    "theme": "simple"
+    "theme": "simple",
+    "syncDate": 1734087425157
 }

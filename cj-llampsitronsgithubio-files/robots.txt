@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://cj-llampsitrons.github.io/sitemap.xml

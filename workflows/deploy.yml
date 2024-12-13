@@ -3,33 +3,34 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger the workflow on push to main branch
+      - main  # Trigger on push to the main branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout repository
+      # Step 1: Checkout repository (main branch)
+      - name: Checkout main branch
         uses: actions/checkout@v3
 
-      # Step 2: Ensure we have the latest gh-pages branch
+      # Step 2: Checkout gh-pages branch (create if it doesn't exist)
       - name: Checkout gh-pages branch
         run: |
           git fetch --all
           git checkout gh-pages || git checkout --orphan gh-pages
 
-      # Step 3: Copy the contents of the Output folder to docs
+      # Step 3: Clean up docs folder
+      - name: Clean docs folder
+        run: |
+          rm -rf docs/*  # Remove all content from docs folder
+
+      # Step 4: Copy the contents of the output folder to the docs folder
       - name: Copy Output to docs folder
         run: |
-          # Remove everything in the docs folder if it exists
-          rm -rf docs/*
+          cp -r output/* docs/  # Copy all files from Output to docs folder
 
-          # Copy files from Output to docs
-          cp -r Output/* docs/
-
-      # Step 4: Commit and push changes to gh-pages branch
+      # Step 5: Commit and push changes to gh-pages branch
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"

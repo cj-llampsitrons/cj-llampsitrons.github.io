@@ -17,8 +17,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        source_dir: ./output
-        destination_branch: gh-pages
+        publish_dir: ./output  # This is the folder you want to deploy from
+        publish_branch: gh-pages  # The branch to deploy to
         user_name: 'github-actions'
         user_email: 'github-actions@github.com'
-
+        commit_message: 'Deploy static site to GitHub Pages'

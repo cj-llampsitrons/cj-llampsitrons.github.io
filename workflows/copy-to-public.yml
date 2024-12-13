@@ -29,6 +29,11 @@ jobs:
         mkdir -p public
         cp -r output/* public/
 
+    # Prevent Jekyll from building by adding a .nojekyll file
+    - name: Add .nojekyll file to prevent Jekyll build
+      run: |
+        touch public/.nojekyll
+
     # Commit and push the changes to the public branch
     - name: Commit and push changes
       run: |

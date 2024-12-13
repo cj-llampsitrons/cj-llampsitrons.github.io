@@ -207,10 +207,10 @@
             "prefix": ""
         },
         "manual": {
-            "output": "zip-archive",
+            "output": "catalog",
             "outputDirectory": ""
         }
     },
     "theme": "simple",
-    "syncDate": 1734090105612
+    "syncDate": 1734090355517
 }

@@ -107,27 +107,27 @@
     {
         "path": "/authors/llamps-i-trons/index.html",
         "type": "file",
-        "md5": "c1c2b557c0c6d4b60b416b3054a21501"
-    },
-    {
-        "path": "comptador.html",
-        "type": "file",
-        "md5": "19ffd210c94a695f473a6532267803ac"
+        "md5": "05e2137a2f03d6724a674220b781b699"
     },
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "69256ebc291dbf93978bf24df5176b2f"
+        "md5": "7817d5b367e135710592c181b81bfa12"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "3217db2f3ea3bddf9b9ee3bfb3e76d3d"
+        "md5": "795cd479b56eeff3ac82b19810977c26"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "5d088afac1b441e30e4d171ecc378a1f"
+        "md5": "7e0e2439e66c0059c9a1bfdeb20e04d0"
+    },
+    {
+        "path": "marcador.html",
+        "type": "file",
+        "md5": "144ef4e9885e9c0d2d96b361d2bceef1"
     },
     {
         "path": "robots.txt",
@@ -137,7 +137,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "efa42100df2387058ae997dfb314cdd7"
+        "md5": "a2ca8b845f959b9c184127a578787825"
     },
     {
         "path": "sitemap.xsl",
@@ -157,7 +157,7 @@
     {
         "path": "test-2.html",
         "type": "file",
-        "md5": "b6493329fe96fabd7f8f8427ffed7bf8"
+        "md5": "ef65a0941d384dcefa03358f07a3ee53"
     },
     {
         "path": "test-3.html",

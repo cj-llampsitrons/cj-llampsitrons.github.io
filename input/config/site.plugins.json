@@ -1,1 +1,8 @@
-{}
+{
+    "docSearch": false,
+    "featherIcons": false,
+    "googleAnalyticsIntegration": false,
+    "googleCustomSearch": false,
+    "imageDecoding": false,
+    "syntaxHighlighter": false
+}

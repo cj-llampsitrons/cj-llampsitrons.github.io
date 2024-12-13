@@ -1,0 +1,3 @@
+#Igonrar-ho tot excepte la carpeta "output"
+*
+!/output/

@@ -3,7 +3,7 @@ name: Deploy Static Website
 on:
   push:
     branches:
-      - main
+      - main  # or 'master', depending on your default branch
 
 jobs:
   deploy:
@@ -16,9 +16,9 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use the personal access token
-          publish_dir: ./output
-          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Correctly use the GITHUB_TOKEN
+          publish_dir: ./output  # The directory to publish from
+          publish_branch: gh-pages  # The branch to publish to
           user_name: 'github-actions'
           user_email: 'github-actions@github.com'
           commit_message: 'Deploy static site to GitHub Pages'

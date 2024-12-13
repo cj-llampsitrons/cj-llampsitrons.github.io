@@ -10,11 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout main branch (your working branch)
+      # Step 1: Checkout the main branch
       - name: Checkout main branch
         uses: actions/checkout@v3
+        with:
+          ref: main
 
-      # Step 2: Checkout gh-page branch (create if it doesn't exist)
+      # Step 2: Checkout the gh-page branch (create if it doesn't exist)
       - name: Checkout gh-page branch
         run: |
           git fetch --all
@@ -26,16 +28,16 @@ jobs:
           mkdir -p docs  # Create docs folder if it doesn't exist
           rm -rf docs/*  # Clean docs folder to prepare for new files
 
-      # Step 4: Copy the contents of the output folder to docs folder
+      # Step 4: Copy the contents of the output folder from main branch to docs folder in gh-page branch
       - name: Copy Output to docs folder
         run: |
-          cp -r output/* docs/  # Copy all files from Output to docs folder
+          cp -r ../main/output/* docs/  # Copy all files from Output folder in main branch to docs folder
 
-      # Step 5: Commit and push changes to gh-page branch
+      # Step 5: Commit and push changes to the gh-page branch
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add docs/
-          git commit -m "Deploy website to docs folder"
+          git commit -m "Deploy website from main branch output to gh-page branch docs folder"
           git push origin gh-page --force

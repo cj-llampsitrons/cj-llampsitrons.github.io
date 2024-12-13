@@ -10,23 +10,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout main branch
+      - name: Checkout the main branch
         uses: actions/checkout@v3
         with:
           ref: main  # Checkout the main branch
 
-      - name: Checkout gh-pages branch
+      - name: Checkout gh-page branch
         run: |
           git fetch --all
-          git checkout gh-pages || git checkout --orphan gh-pages  # Create or switch to the gh-pages branch
+          git checkout gh-page || git checkout --orphan gh-page  # Create or switch to the gh-page branch
 
-      - name: Clean up gh-pages folder
+      - name: Clean up gh-page folder
         run: |
           rm -rf *  # Clean the folder to prepare for new files
 
-      - name: Copy files from output to gh-pages
+      - name: Copy files from output folder
         run: |
-          cp -r output/* .  # Copy all files from the output folder (on the main branch) to the root of gh-pages
+          cp -r output/* .  # Copy all files from the output folder to the root of gh-page
 
       - name: Create .nojekyll file
         run: |
@@ -38,4 +38,4 @@ jobs:
           git config --global user.email "actions@github.com"
           git add . .nojekyll
           git commit -m "Deploy static files from main branch output"
-          git push origin gh-pages --force
+          git push origin gh-page --force

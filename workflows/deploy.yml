@@ -3,45 +3,39 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - main  # Trigger this on a push to the main branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the main branch (where the output folder is located)
       - name: Checkout main branch
         uses: actions/checkout@v3
         with:
-          ref: main
+          ref: main  # Checkout the main branch
 
-      # Step 2: Checkout the gh-page branch (create it if it doesn't exist)
-      - name: Checkout gh-page branch
+      - name: Checkout gh-pages branch
         run: |
           git fetch --all
-          git checkout gh-page || git checkout --orphan gh-page
+          git checkout gh-pages || git checkout --orphan gh-pages  # Create or switch to the gh-pages branch
 
-      # Step 3: Clean the root of the gh-page branch
-      - name: Clean root of gh-page branch
+      - name: Clean up gh-pages folder
         run: |
-          rm -rf *  # Clean the root folder to prepare for new files
+          rm -rf *  # Clean the folder to prepare for new files
 
-      # Step 4: Copy contents of output folder from main to the root of gh-page branch
-      - name: Copy files from output to gh-page root
+      - name: Copy files from output to gh-pages
         run: |
-          cp -r output/* .  # Copy all files from the output folder to the root
+          cp -r output/* .  # Copy all files from the output folder (on the main branch) to the root of gh-pages
 
-      # Step 5: Create the .nojekyll file to disable Jekyll
       - name: Create .nojekyll file
         run: |
-          touch .nojekyll  # Create the .nojekyll file to disable Jekyll
+          touch .nojekyll  # Create a .nojekyll file to disable Jekyll processing
 
-      # Step 6: Commit and push changes to the gh-page branch
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add . .nojekyll
-          git commit -m "Deploy static files from main branch output to gh-page branch"
-          git push origin gh-page --force
+          git commit -m "Deploy static files from main branch output"
+          git push origin gh-pages --force

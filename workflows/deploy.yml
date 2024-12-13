@@ -10,22 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the code from the main branch
+      # Checkout the code from the main branch (no Jekyll build)
       - name: Checkout main branch
         uses: actions/checkout@v3
         with:
           ref: main
 
-      # Checkout the public branch as well
+      # Checkout the public branch (where you want to copy the files to)
       - name: Checkout public branch
         uses: actions/checkout@v3
         with:
           ref: public
           path: public
 
-      # Copy the content of the `output` folder from main branch to public branch
+      # Copy the content of the `output` folder from the main branch to the public branch
       - name: Copy output folder content
         run: |
+          # Disable Jekyll build by creating an empty .nojekyll file in the public branch
+          touch public/.nojekyll
+          # Copy the contents of the `output` folder into the `public` directory
           cp -r output/* public/
 
       # Commit and push changes to the public branch

@@ -1,41 +1,39 @@
-name: Deploy to GitHub Pages
+name: Deploy to Public Branch
 
 on:
   push:
     branches:
-      - main  # Trigger this on a push to the main branch
+      - main  # Trigger this workflow when pushing to the `main` branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout the main branch
+      # Checkout the code from the main branch
+      - name: Checkout main branch
         uses: actions/checkout@v3
         with:
-          ref: main  # Checkout the main branch
+          ref: main
 
-      - name: Checkout gh-page branch
+      # Checkout the public branch as well
+      - name: Checkout public branch
+        uses: actions/checkout@v3
+        with:
+          ref: public
+          path: public
+
+      # Copy the content of the `output` folder from main branch to public branch
+      - name: Copy output folder content
         run: |
-          git fetch --all
-          git checkout gh-page || git checkout --orphan gh-page  # Create or switch to the gh-page branch
+          cp -r output/* public/
 
-      - name: Clean up gh-page folder
-        run: |
-          rm -rf *  # Clean the folder to prepare for new files
-
-      - name: Copy files from output folder
-        run: |
-          cp -r output/* .  # Copy all files from the output folder to the root of gh-page
-
-      - name: Create .nojekyll file
-        run: |
-          touch .nojekyll  # Create a .nojekyll file to disable Jekyll processing
-
+      # Commit and push changes to the public branch
       - name: Commit and push changes
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add . .nojekyll
-          git commit -m "Deploy static files from main branch output"
-          git push origin gh-page --force
+          cd public
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Deploy output folder to public branch"
+          git push origin public

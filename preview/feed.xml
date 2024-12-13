@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>cj.llampsitrons.github.io</title>
+    <link href="file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cj-llampsitrons.github.io\preview/feed.xml" rel="self" />
+    <link href="file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cj-llampsitrons.github.io\preview" />
+    <updated>2024-12-13T10:30:31+01:00</updated>
+    <author>
+        <name>Llamps i Trons</name>
+    </author>
+    <id>file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cj-llampsitrons.github.io\preview</id>
+
+    <entry>
+        <title>Test</title>
+        <author>
+            <name>Llamps i Trons</name>
+        </author>
+        <link href="file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cj-llampsitrons.github.io\preview/test.html"/>
+        <id>file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cj-llampsitrons.github.io\preview/test.html</id>
+
+        <updated>2024-12-13T10:30:31+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Test
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Test</p>
+            ]]>
+        </content>
+    </entry>
+</feed>

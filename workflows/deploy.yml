@@ -1,4 +1,4 @@
-name: Copy files to gh-page branch
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -6,11 +6,11 @@ on:
       - main  # Trigger on push to the main branch
 
 jobs:
-  copy-files:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the main branch (where output is located)
+      # Step 1: Checkout the main branch (where the output folder is located)
       - name: Checkout main branch
         uses: actions/checkout@v3
         with:
@@ -22,21 +22,21 @@ jobs:
           git fetch --all
           git checkout gh-page || git checkout --orphan gh-page
 
-      # Step 3: Clean the docs folder to prepare for the new files
-      - name: Clean docs folder
+      # Step 3: Clean root of gh-page branch to prepare for new files
+      - name: Clean root of gh-page branch
         run: |
-          rm -rf docs/*  # Clean docs folder to prepare for new files
+          rm -rf *  # Clean the root folder to prepare for new files
 
-      # Step 4: Copy the contents of the output folder (from main) to docs (in gh-page)
-      - name: Copy files from output to docs
+      # Step 4: Copy contents of output folder from main to root of gh-page branch
+      - name: Copy files from output to gh-page root
         run: |
-          cp -r output/* docs/  # Copy all files from Output folder to docs folder
+          cp -r output/* .  # Copy all files from the output folder to the root
 
-      # Step 5: Commit and push changes to the gh-page branch
+      # Step 5: Commit and push changes to gh-page branch
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add docs/
-          git commit -m "Copy files from output to docs"
+          git add .
+          git commit -m "Deploy static files from main branch output to gh-page branch"
           git push origin gh-page --force

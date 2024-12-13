@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the code from the main branch (no Jekyll build)
+      # Checkout the code from the main branch
       - name: Checkout main branch
         uses: actions/checkout@v3
         with:
@@ -23,13 +23,14 @@ jobs:
           ref: public
           path: public
 
-      # Copy the content of the `output` folder from the main branch to the public branch
-      - name: Copy output folder content
+      # Ensure Jekyll is not triggered by adding a .nojekyll file
+      - name: Disable Jekyll build
+        run: touch public/.nojekyll
+
+      # Sync the content of the `output` folder from the main branch to the public branch
+      - name: Sync output folder content
         run: |
-          # Disable Jekyll build by creating an empty .nojekyll file in the public branch
-          touch public/.nojekyll
-          # Copy the contents of the `output` folder into the `public` directory
-          cp -r output/* public/
+          rsync -av --exclude='.git' --exclude='.github' output/ public/
 
       # Commit and push changes to the public branch
       - name: Commit and push changes
@@ -38,5 +39,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add .
-          git commit -m "Deploy output folder to public branch"
+          git commit -m "Sync output folder content from main to public branch"
           git push origin public

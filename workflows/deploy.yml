@@ -22,21 +22,26 @@ jobs:
           git fetch --all
           git checkout gh-page || git checkout --orphan gh-page
 
-      # Step 3: Clean root of gh-page branch to prepare for new files
+      # Step 3: Clean the root of the gh-page branch
       - name: Clean root of gh-page branch
         run: |
           rm -rf *  # Clean the root folder to prepare for new files
 
-      # Step 4: Copy contents of output folder from main to root of gh-page branch
+      # Step 4: Copy contents of output folder from main to the root of gh-page branch
       - name: Copy files from output to gh-page root
         run: |
           cp -r output/* .  # Copy all files from the output folder to the root
 
-      # Step 5: Commit and push changes to gh-page branch
+      # Step 5: Create the .nojekyll file to disable Jekyll
+      - name: Create .nojekyll file
+        run: |
+          touch .nojekyll  # Create the .nojekyll file to disable Jekyll
+
+      # Step 6: Commit and push changes to the gh-page branch
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add .
+          git add . .nojekyll
           git commit -m "Deploy static files from main branch output to gh-page branch"
           git push origin gh-page --force

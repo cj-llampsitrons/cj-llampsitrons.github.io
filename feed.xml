@@ -3,106 +3,10 @@
     <title>cj.llampsitrons.github.io</title>
     <link href="https://cj-llampsitrons.github.io/feed.xml" rel="self" />
     <link href="https://cj-llampsitrons.github.io" />
-    <updated>2024-12-13T12:45:51+01:00</updated>
+    <updated>1970-01-01T01:00:00+01:00</updated>
     <author>
         <name>Llamps i Trons</name>
     </author>
     <id>https://cj-llampsitrons.github.io</id>
 
-    <entry>
-        <title>Test 5</title>
-        <author>
-            <name>Llamps i Trons</name>
-        </author>
-        <link href="https://cj-llampsitrons.github.io/test-5.html"/>
-        <id>https://cj-llampsitrons.github.io/test-5.html</id>
-
-        <updated>2024-12-13T12:32:33+01:00</updated>
-            <summary>
-                <![CDATA[
-                    Test 5
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Test 5</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>test 4</title>
-        <author>
-            <name>Llamps i Trons</name>
-        </author>
-        <link href="https://cj-llampsitrons.github.io/test-4.html"/>
-        <id>https://cj-llampsitrons.github.io/test-4.html</id>
-
-        <updated>2024-12-13T12:11:21+01:00</updated>
-            <summary>
-                <![CDATA[
-                    test 4
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>test 4</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Test 3</title>
-        <author>
-            <name>Llamps i Trons</name>
-        </author>
-        <link href="https://cj-llampsitrons.github.io/test-3.html"/>
-        <id>https://cj-llampsitrons.github.io/test-3.html</id>
-
-        <updated>2024-12-13T12:02:56+01:00</updated>
-            <summary>
-                <![CDATA[
-                    Test 3
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Test 3</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Test 2</title>
-        <author>
-            <name>Llamps i Trons</name>
-        </author>
-        <link href="https://cj-llampsitrons.github.io/test-2.html"/>
-        <id>https://cj-llampsitrons.github.io/test-2.html</id>
-
-        <updated>2024-12-13T11:56:59+01:00</updated>
-            <summary>
-                <![CDATA[
-                    Tst 2
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>Tst 2</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Marcador</title>
-        <author>
-            <name>Llamps i Trons</name>
-        </author>
-        <link href="https://cj-llampsitrons.github.io/marcador.html"/>
-        <id>https://cj-llampsitrons.github.io/marcador.html</id>
-
-        <updated>2024-12-13T12:45:51+01:00</updated>
-            <summary></summary>
-        <content type="html">
-            <![CDATA[
-                <div class="post__iframe"><iframe loading="lazy" style="width: 100%; height: 100vh; border: none;" src="https://cj-llampsitrons.github.io/comptador"></iframe></div>
-            ]]>
-        </content>
-    </entry>
 </feed>

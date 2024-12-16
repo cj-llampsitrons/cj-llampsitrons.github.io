@@ -1,0 +1,146 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+{{> head}}
+{{> top}}
+
+<main id="main">
+   {{#page}}
+      <article class="post">
+         <header class="major">
+            {{#if @config.page.displayDate}}
+               <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}" class="date">
+                  {{#checkIf @config.custom.formatDate '!=' 'custom'}}
+                     {{date createdAt @config.custom.formatDate}}
+                  {{else}}
+                     {{date createdAt @config.custom.formatDateCustom}}
+                  {{/checkIf}}
+               </time>
+            {{/if}}
+            <h1>
+               {{title}}
+            </h1>
+            <p class="post__inner">{{@config.page.introText}}</p>
+         </header>
+
+         {{#featuredImage}}
+            {{#if url}}
+               <figure class="image main">
+                  <img
+                     src="{{url}}"
+                     {{#if @config.site.responsiveImages}}
+                        {{responsiveImageAttributes 'featuredImage' srcset.post sizes.post}}
+                     {{/if}}
+                     {{ lazyload "lazy" }}
+                     height="{{height}}"
+                     width="{{width}}"
+                     alt="{{alt}}">
+                  {{#checkIfAny caption credits}}
+                     <figcaption>
+                        {{caption}}
+                        {{credits}}
+                     </figcaption>                      
+                  {{/checkIfAny}} 
+               </figure>
+            {{/if}}
+         {{/featuredImage}}
+
+         <div class="post__inner post__entry">           
+            {{{text}}}            
+         </div>
+
+         {{#checkIfAny @config.page.displayLastUpdatedDate @config.page.displayShareButtons @config.page.displayAuthorBio}}
+            <footer class="post__inner post__footer">
+               {{#checkIfAny @config.page.displayLastUpdatedDate @config.page.displayShareButtons}}
+                  <div class="post__share-tag-container">
+                     {{#if @config.page.displayLastUpdatedDate}}
+                        {{#if modifiedAt}}
+                           <p class="post__last-updated">
+                              {{ translate 'post.lastUpdatedDate' }}
+                              {{#checkIf @config.custom.formatDate '!=' 'custom'}}
+                                 {{date modifiedAt @config.custom.formatDate}}
+                              {{else}}
+                                 {{date modifiedAt @config.custom.formatDateCustom}}
+                              {{/checkIf}}
+                           </p>
+                        {{/if}}
+                     {{/if}}
+
+                     {{#if @config.page.displayShareButtons}}
+                        <div class="post__share">
+                           <button
+                              class="post__share-button js-post__share-button icon"
+                              aria-label="{{ translate 'partials.share-buttons.shareButtons' }}">
+                              <i class="fas fa-share-alt"></i>
+                           </button>
+
+                           <div class="post__share-popup js-post__share-popup">
+                              {{#checkIfAll @plugins.socialSharing @plugins.socialSharing.state}}
+                                 {{{@customSocialSharing}}}
+                              {{else}}
+                                 {{> share-buttons}}
+                              {{/checkIfAll}}
+                           </div>
+                        </div>
+                     {{/if}}
+                  </div>
+               {{/checkIfAny}}
+
+               {{#if @config.page.displayAuthorBio}}
+                  <div class="post__bio">
+                     {{#author}}
+                        {{#if avatar}}                            
+                           <img 
+                              src="{{avatarImage.url}}" 
+                              {{ lazyload "lazy" }}
+                              height="{{avatarImage.height}}"
+                              width="{{avatarImage.width}}"
+                              alt="{{avatarImage.alt}}">                            
+                        {{/if}}
+                        <div>
+                           <h3>
+                              <a href="{{url}}" class="invert" rel="author">{{name}}</a>
+                           </h3>
+                           {{{description}}}
+                        </div>
+                     {{/author}}
+                  </div>
+               {{/if}}
+            </footer>
+         {{/checkIfAny}}
+      </article>
+
+      {{#if @config.page.displayChildPages}}
+         {{#if subpages}}
+            <div class="subpages">
+               <div class="post__inner">
+                  <h2 class="subpages__title">{{ translate 'page.childPages' }}</h2>
+                  <ul class="subpages__list">
+                     {{> subpages-list}}
+                  </ul>
+               </div>
+            </div>
+         {{/if}}
+      {{/if}}
+
+      {{#if @config.page.displayComments}}
+         <div class="comments-area">
+            <div class="post__inner">
+               {{{@commentsCustomCode}}}
+            </div>
+         </div>
+      {{/if}}
+
+      {{#if @customHTML.afterPage}}
+         <div class="banner banner--after-post">
+            <div class="wrapper">
+               {{{@customHTML.afterPage}}}
+            </div>
+         </div>
+      {{/if}}
+
+   {{/page}}
+</main>
+{{> footer}}

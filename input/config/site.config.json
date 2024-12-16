@@ -1,6 +1,6 @@
 {
     "uuid": "uuid-1734082177348-944842226",
-    "name": "cj-llampsitronsgithubio",
+    "name": "cjllampsitronsgithubio",
     "displayName": "cj.llampsitrons.github.io",
     "synced": "synced",
     "logo": {
@@ -31,20 +31,26 @@
         "openGraphEnabled": 1,
         "openGraphImage": "",
         "openGraphAppId": "",
-        "twitterCardsEnabled": 1,
+        "twitterCardsEnabled": false,
         "twitterCardsType": "summary",
         "twitterUsername": "",
         "metaTitle": "%sitename",
         "metaDescription": "",
         "noIndexThisPage": false,
-        "noIndexForChatGPTBot": false,
-        "noIndexForChatGPTUser": false,
+        "noIndexForChatGPTBot": true,
+        "noIndexForChatGPTUser": true,
         "noIndexForCommonCrawlBots": false,
         "homepageNoIndexPagination": false,
         "homepageNoPagination": false,
         "metaRobotsIndex": "index, follow",
+        "homepageMetaTitle": "%sitename",
+        "homepageMetaDescription": "",
+        "homepageMetaRobotsIndex": "index, follow",
         "postMetaTitle": "%posttitle - %sitename ",
         "postMetaDescription": "",
+        "pageMetaTitle": "%pagetitle - %sitename ",
+        "pageMetaDescription": "",
+        "pageUseTextWithoutCustomExcerpt": false,
         "postUseTextWithoutCustomExcerpt": false,
         "tagMetaTitle": "Tag: %tagname - %sitename",
         "tagMetaDescription": "",
@@ -73,6 +79,8 @@
         "featuredPostsListingOrder": "DESC",
         "hiddenPostsListingOrderBy": "created_at",
         "hiddenPostsListingOrder": "DESC",
+        "usePageAsFrontpage": false,
+        "pageAsFrontpage": 0,
         "feed": {
             "title": "displayName",
             "titleValue": "",
@@ -81,14 +89,18 @@
             "showFeaturedImage": 1,
             "enableRss": 1,
             "enableJson": 1,
+            "updatedDateType": "createdAt",
             "showOnlyFeatured": 0,
             "excludeFeatured": 0
         },
         "urls": {
             "cleanUrls": false,
             "addIndex": false,
+            "postsPrefix": "",
             "tagsPrefix": "tags",
+            "tagsPrefixAfterPostsPrefix": false,
             "authorsPrefix": "authors",
+            "authorsPrefixAfterPostsPrefix": false,
             "pageName": "page",
             "errorPage": "404.html",
             "searchPage": "search.html"
@@ -116,6 +128,17 @@
                 }
             ],
             "embedConsents": [],
+            "gConsentModeEnabled": false,
+            "gConsentModeDefaultState": {
+                "ad_storage": false,
+                "ad_personalization": false,
+                "ad_user_data": false,
+                "analytics_storage": false,
+                "personalization_storage": false,
+                "functionality_storage": false,
+                "security_storage": false
+            },
+            "gConsentModeGroups": [],
             "saveButtonLabel": "Accept all",
             "behaviour": "badge",
             "badgeLabel": "Cookie Policy",
@@ -136,7 +159,7 @@
             "debugMode": false,
             "vimeoNoTrack": false,
             "ytNoCookies": false,
-            "settingsVersion": ""
+            "settingsVersion": "v2"
         },
         "relatedPostsOrder": "default",
         "relatedPostsCriteria": "titles-and-tags",
@@ -211,6 +234,6 @@
             "outputDirectory": ""
         }
     },
-    "theme": "simple",
-    "syncDate": 1734090355517
+    "theme": "massively",
+    "syncDate": 1734341094547
 }

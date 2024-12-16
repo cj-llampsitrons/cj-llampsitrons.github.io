@@ -2,26 +2,13 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "cj.llampsitrons.github.io",
     "description": "",
-    "home_page_url": "file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cj-llampsitrons.github.io\preview",
-    "feed_url": "file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cj-llampsitrons.github.io\preview/feed.json",
+    "home_page_url": "file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview",
+    "feed_url": "file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview/feed.json",
     "user_comment": "",
+    "icon": "file:///C:/Users/mtome/Documents/MEGAsync/Informatica/Publii/Webs guardades/cjllampsitronsgithubio/preview/media/website/capcalera_logoCoord.png",
     "author": {
         "name": "Llamps i Trons"
     },
     "items": [
-        {
-            "id": "file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cj-llampsitrons.github.io\preview/test.html",
-            "url": "file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cj-llampsitrons.github.io\preview/test.html",
-            "title": "Test",
-            "summary": "Test",
-            "content_html": "<p>Test</p>",
-            "author": {
-                "name": "Llamps i Trons"
-            },
-            "tags": [
-            ],
-            "date_published": "2024-12-13T10:30:31+01:00",
-            "date_modified": "2024-12-13T10:30:31+01:00"
-        }
     ]
 }

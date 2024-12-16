@@ -1,0 +1,50 @@
+</div>
+
+<script defer src="{{js "scripts.min.js"}}"></script>
+
+{{#if @config.site.mediaLazyLoad}}
+    <script>        
+        var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }
+    </script>
+{{/if}}
+
+{{#if @config.custom.pagePrefetching}}
+   <script defer src="{{js "quicklink.umd.js"}}"></script>
+   <script>
+      window.addEventListener('load', () =>{
+      quicklink.listen();
+      });
+   </script>
+{{/if}}
+
+{{#is "post"}}
+   {{#post}}
+      {{#if hasGallery}}
+          {{> photoswipe}}
+      {{/if}}
+  {{/post}}
+{{/is}}
+{{#checkIf @config.custom.frontSource '==' "post"}}
+   {{#checkIf @config.custom.frontGallery '==' true}}
+      {{#is "index"}}
+          {{> photoswipe}}
+      {{/is}}
+   {{/checkIf}}
+{{/checkIf}}
+{{#if @renderer.previewMode}}
+   <script defer src="{{js "svg-map.js"}}"></script>
+   <script defer src="{{js "svg-fix.js"}}"></script>
+{{/if}}
+{{{@footerCustomCode}}}
+{{{ publiiFooter }}}
+</body>
+</html>

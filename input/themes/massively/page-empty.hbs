@@ -1,0 +1,66 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+{{> head}}
+{{> top}}
+
+<main id="main">
+   {{#page}}
+      <div class="post">
+         <header class="major">
+            {{#if @config.page.displayDate}}
+               <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}" class="date">
+                  {{#checkIf @config.custom.formatDate '!=' 'custom'}}
+                     {{date createdAt @config.custom.formatDate}}
+                  {{else}}
+                     {{date createdAt @config.custom.formatDateCustom}}
+                  {{/checkIf}}
+               </time>
+            {{/if}}
+            <h1>
+               {{title}}
+            </h1>
+            <p class="post__inner">{{@config.page.introText}}</p>
+         </header>
+
+         {{#featuredImage}}
+            {{#if url}}
+               <figure class="image main">
+                  <img
+                     src="{{url}}"
+                     {{#if @config.site.responsiveImages}}
+                        {{responsiveImageAttributes 'featuredImage' srcset.post sizes.post}}
+                     {{/if}}
+                     {{ lazyload "lazy" }}
+                     height="{{height}}"
+                     width="{{width}}"
+                     alt="{{alt}}">
+                  {{#checkIfAny caption credits}}
+                     <figcaption>
+                        {{caption}}
+                        {{credits}}
+                     </figcaption>                      
+                  {{/checkIfAny}} 
+               </figure>
+            {{/if}}
+         {{/featuredImage}}
+
+         <div class="post__entry">           
+            {{{text}}}            
+         </div>
+
+      </div>
+
+      {{#if @customHTML.afterPage}}
+         <div class="banner banner--after-post">
+            <div class="wrapper">
+               {{{@customHTML.afterPage}}}
+            </div>
+         </div>
+      {{/if}}
+
+   {{/page}}
+</main>
+{{> footer}}

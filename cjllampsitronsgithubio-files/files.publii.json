@@ -2,12 +2,17 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "3299121e46aab3a441ae3d39d40e12da"
+        "md5": "b62e658495f8e3b57664138c4264b63c"
     },
     {
-        "path": "activitats.html",
+        "path": "activitats",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/activitats/index.html",
         "type": "file",
-        "md5": "22061b3d4f39822d27577a594b67c9c5"
+        "md5": "ecef8532f2310598706e5495a6ca7951"
     },
     {
         "path": "assets",
@@ -167,12 +172,17 @@
     {
         "path": "/authors/llamps-i-trons/index.html",
         "type": "file",
-        "md5": "f1032401be2392e1d590dfa22bc75448"
+        "md5": "66026561dd2073b927ad97a4e627eb41"
     },
     {
-        "path": "contacte.html",
+        "path": "contacte",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/contacte/index.html",
         "type": "file",
-        "md5": "4113fef9cdd03aec34ab3d96f79eef51"
+        "md5": "e558bcf578a716e32b0318c10236a664"
     },
     {
         "path": "feed.json",
@@ -185,19 +195,29 @@
         "md5": "b0bb2411e38095877dd8c8ee3eb27ba4"
     },
     {
-        "path": "festa-major-de-la-creu-alta.html",
+        "path": "festa-major-de-la-creu-alta",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/festa-major-de-la-creu-alta/index.html",
         "type": "file",
-        "md5": "f2f58b779778efd2c43cb407bbe24952"
+        "md5": "35d2caa9b6f31f3505478321c7023d2f"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "554595c4203b801f7abaad404ce631ed"
+        "md5": "ceeef8d71683a48f54a9561b0d76b0a9"
     },
     {
-        "path": "marcador.html",
+        "path": "marcador",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/marcador/index.html",
         "type": "file",
-        "md5": "ff3881dd1107cc0a2895296188f00997"
+        "md5": "0b590d123b41fe59b24b948f2464671b"
     },
     {
         "path": "media",
@@ -335,9 +355,14 @@
         "md5": "cbe8ce6e617f95715687d558fd9f261a"
     },
     {
-        "path": "qui-som.html",
+        "path": "qui-som",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/qui-som/index.html",
         "type": "file",
-        "md5": "cd7c284c0fb910f8197456ddebc7d68b"
+        "md5": "9fa6329a42de3398a19ca0cfee19adf5"
     },
     {
         "path": "robots.txt",
@@ -347,7 +372,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "bbee5a780278f9dc13d31e297c537d1e"
+        "md5": "04a6cbdb2264345a8f079c44ff809ef2"
     },
     {
         "path": "sitemap.xsl",
@@ -362,6 +387,6 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "1c0e878dde51b5419d625fac173574b8"
+        "md5": "4723118637fdef4646144ca586bf6698"
     }
 ]

@@ -94,7 +94,7 @@
             "excludeFeatured": 0
         },
         "urls": {
-            "cleanUrls": false,
+            "cleanUrls": true,
             "addIndex": false,
             "postsPrefix": "",
             "tagsPrefix": "tags",
@@ -235,5 +235,5 @@
         }
     },
     "theme": "massively",
-    "syncDate": 1734343597567
+    "syncDate": 1734343811131
 }

@@ -2,13 +2,25 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "cj.llampsitrons.github.io",
     "description": "",
-    "home_page_url": "file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview",
-    "feed_url": "file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview/feed.json",
+    "home_page_url": "file:///C:\Users\Jofre\Documents\Publii\sites\cj-llampsitrons.github.io\preview",
+    "feed_url": "file:///C:\Users\Jofre\Documents\Publii\sites\cj-llampsitrons.github.io\preview/feed.json",
     "user_comment": "",
-    "icon": "file:///C:/Users/mtome/Documents/MEGAsync/Informatica/Publii/Webs guardades/cjllampsitronsgithubio/preview/media/website/capcalera_logoCoord.png",
+    "icon": "file:///C:/Users/Jofre/Documents/Publii/sites/cj-llampsitrons.github.io/preview/media/website/capcalera_logoCoord.png",
     "author": {
         "name": "Llamps i Trons"
     },
     "items": [
+        {
+            "id": "file:///C:\Users\Jofre\Documents\Publii\sites\cj-llampsitrons.github.io\preview/hello-world/index.html",
+            "url": "file:///C:\Users\Jofre\Documents\Publii\sites\cj-llampsitrons.github.io\preview/hello-world/index.html",
+            "title": "Hello world",
+            "author": {
+                "name": "Llamps i Trons"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-01-15T18:58:01+01:00",
+            "date_modified": "2025-01-15T18:58:01+01:00"
+        }
     ]
 }

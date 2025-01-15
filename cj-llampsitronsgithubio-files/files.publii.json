@@ -1,1 +1,402 @@
-{ "revision": "ec1ea9bd-c440-4a87-9240-f905c87b88c1" }
+[
+    {
+        "path": "404.html",
+        "type": "file",
+        "md5": "63e63ef204c8830957ab7916784ce423"
+    },
+    {
+        "path": "activitats",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/activitats/index.html",
+        "type": "file",
+        "md5": "854559cbd935b6904f45d7b52fd0aedd"
+    },
+    {
+        "path": "assets",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "assets/css",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/css/editor.css",
+        "type": "file",
+        "md5": "4202808df745f2ac7ab250606fa0d272"
+    },
+    {
+        "path": "/assets/css/fontawesome-all.min.css",
+        "type": "file",
+        "md5": "a00e1bec9bab5f665438ad469499ed81"
+    },
+    {
+        "path": "/assets/css/main.css",
+        "type": "file",
+        "md5": "688cb28c25f88280a1b680d010cbe6fc"
+    },
+    {
+        "path": "/assets/css/noscript.css",
+        "type": "file",
+        "md5": "c3bc3bbb5aa1287f1f948dad5a327490"
+    },
+    {
+        "path": "/assets/css/style.css",
+        "type": "file",
+        "md5": "5306d0b31defc16b39fff36f66aa0a33"
+    },
+    {
+        "path": "assets/dynamic",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "assets/images",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/images/overlay.png",
+        "type": "file",
+        "md5": "34aca8cf1dcd5a4077c26c80950d00c6"
+    },
+    {
+        "path": "assets/js",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/js/breakpoints.min.js",
+        "type": "file",
+        "md5": "d3022c8af7963ec46aa3692f5948a1ba"
+    },
+    {
+        "path": "/assets/js/browser.min.js",
+        "type": "file",
+        "md5": "4ebb0929ae5211dcb31336073eba2432"
+    },
+    {
+        "path": "/assets/js/jquery.min.js",
+        "type": "file",
+        "md5": "b83db83a1d89113ee03ab730efa48c7a"
+    },
+    {
+        "path": "/assets/js/jquery.scrollex.min.js",
+        "type": "file",
+        "md5": "f89065e3d988006af9791b44561d7c90"
+    },
+    {
+        "path": "/assets/js/jquery.scrolly.min.js",
+        "type": "file",
+        "md5": "1ed5a78bde1476875a40f6b9ff44fc14"
+    },
+    {
+        "path": "/assets/js/main.js",
+        "type": "file",
+        "md5": "d5433762aebe47e7d1471db6d18f28ae"
+    },
+    {
+        "path": "/assets/js/main.min.js",
+        "type": "file",
+        "md5": "56233c354bd814758be8bff42f7e13a5"
+    },
+    {
+        "path": "/assets/js/util.js",
+        "type": "file",
+        "md5": "fd2716a7b68ce7748c9676787b61db43"
+    },
+    {
+        "path": "/assets/js/util.min.js",
+        "type": "file",
+        "md5": "4201a626f8c9b614a663b3a1d7d82615"
+    },
+    {
+        "path": "assets/webfonts",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/webfonts/fa-brands-400.ttf",
+        "type": "file",
+        "md5": "7d09abecdcbd61d9f7eed02ad7ed9f3e"
+    },
+    {
+        "path": "/assets/webfonts/fa-brands-400.woff2",
+        "type": "file",
+        "md5": "12129ae64db69ed98868da86ad4542b6"
+    },
+    {
+        "path": "/assets/webfonts/fa-regular-400.ttf",
+        "type": "file",
+        "md5": "49db3589f7cc4e2c2fbd61073450b881"
+    },
+    {
+        "path": "/assets/webfonts/fa-regular-400.woff2",
+        "type": "file",
+        "md5": "1183f80a7de1312c6aaed6cb2040d26b"
+    },
+    {
+        "path": "/assets/webfonts/fa-solid-900.ttf",
+        "type": "file",
+        "md5": "f4242a99ea504fbf8ddefb40c853de4d"
+    },
+    {
+        "path": "/assets/webfonts/fa-solid-900.woff2",
+        "type": "file",
+        "md5": "de8cf878500c5ec452ae912ddb9c7aaa"
+    },
+    {
+        "path": "/assets/webfonts/fa-v4compatibility.ttf",
+        "type": "file",
+        "md5": "d38445641a866e80bccf9cb4c4a03de8"
+    },
+    {
+        "path": "/assets/webfonts/fa-v4compatibility.woff2",
+        "type": "file",
+        "md5": "5f14f683621dbaf2d3644848b74c5a7f"
+    },
+    {
+        "path": "authors",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "authors/llamps-i-trons",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/authors/llamps-i-trons/index.html",
+        "type": "file",
+        "md5": "914d9a9ee41552ed30d69bcd0a5efa6f"
+    },
+    {
+        "path": "contacte",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/contacte/index.html",
+        "type": "file",
+        "md5": "a10de806015505c72e69f4274eb712f1"
+    },
+    {
+        "path": "feed.json",
+        "type": "file",
+        "md5": "ab68e86e7b920753618e3a77dba8369f"
+    },
+    {
+        "path": "feed.xml",
+        "type": "file",
+        "md5": "e97056c1f2f3e147f6c397cdbfa01158"
+    },
+    {
+        "path": "festa-major-de-la-creu-alta",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/festa-major-de-la-creu-alta/index.html",
+        "type": "file",
+        "md5": "c39a8f1dae9e915fa7ad3be5a54b0030"
+    },
+    {
+        "path": "hello-world",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/hello-world/index.html",
+        "type": "file",
+        "md5": "94e3afed2b2f4fe0edf7c00737046f00"
+    },
+    {
+        "path": "index.html",
+        "type": "file",
+        "md5": "993b57b73b28b288976db0b7b2a78806"
+    },
+    {
+        "path": "marcador",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/marcador/index.html",
+        "type": "file",
+        "md5": "2bcb170059f5043d45fdae054fa35305"
+    },
+    {
+        "path": "media",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts/1",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/1/DEU-LLAMP.png",
+        "type": "file",
+        "md5": "ba22cbeadcd3236039fc37d1089ae615"
+    },
+    {
+        "path": "/media/posts/1/DEU-TRO.png",
+        "type": "file",
+        "md5": "d9e612bdd61d94bbc218a75ea7c45f88"
+    },
+    {
+        "path": "media/posts/1/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-2xl.png",
+        "type": "file",
+        "md5": "c2ea57dd8a4ed1b0175e82994279169a"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-lg.png",
+        "type": "file",
+        "md5": "19fc216167c78c4c3dc12916d9f84c02"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-md.png",
+        "type": "file",
+        "md5": "5ae343b7166fca482680fe051c088687"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-sm.png",
+        "type": "file",
+        "md5": "e25d0c992c71b832d7421b34669c476c"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-xl.png",
+        "type": "file",
+        "md5": "67c9f318109336042b023e22129656d1"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-xs.png",
+        "type": "file",
+        "md5": "ddedb1e10fa32c2fcf7be6a622c84f02"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-2xl.png",
+        "type": "file",
+        "md5": "c4240090fa76f7e5eddcff4edf84b18e"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-lg.png",
+        "type": "file",
+        "md5": "094b443e87b0c1a33bf50507e781cc78"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-md.png",
+        "type": "file",
+        "md5": "a6460147c4e0393fee8a93f08a174e04"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-sm.png",
+        "type": "file",
+        "md5": "f800410b65db2a18870bec582cf4af9f"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-xl.png",
+        "type": "file",
+        "md5": "c7e8c3d4e746b5b226a26238773f8584"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-xs.png",
+        "type": "file",
+        "md5": "d4f7ca94c7bfd0e47a94468d0051de80"
+    },
+    {
+        "path": "media/website",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/website/capcalera_logoCoord.png",
+        "type": "file",
+        "md5": "bda7afcc420718fffbfbc2c3bf2f80e3"
+    },
+    {
+        "path": "media/website/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/website/responsive/capcalera_logoCoord-2xl.png",
+        "type": "file",
+        "md5": "7241eba8cc637948f0dce40788a56a14"
+    },
+    {
+        "path": "/media/website/responsive/capcalera_logoCoord-lg.png",
+        "type": "file",
+        "md5": "7241eba8cc637948f0dce40788a56a14"
+    },
+    {
+        "path": "/media/website/responsive/capcalera_logoCoord-md.png",
+        "type": "file",
+        "md5": "7241eba8cc637948f0dce40788a56a14"
+    },
+    {
+        "path": "/media/website/responsive/capcalera_logoCoord-sm.png",
+        "type": "file",
+        "md5": "3f1a5a85a8e7c59e8af952ba356c3ede"
+    },
+    {
+        "path": "/media/website/responsive/capcalera_logoCoord-xl.png",
+        "type": "file",
+        "md5": "7241eba8cc637948f0dce40788a56a14"
+    },
+    {
+        "path": "/media/website/responsive/capcalera_logoCoord-xs.png",
+        "type": "file",
+        "md5": "cbe8ce6e617f95715687d558fd9f261a"
+    },
+    {
+        "path": "qui-som",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/qui-som/index.html",
+        "type": "file",
+        "md5": "6b0505eab3b8b95b329fe2271d62da8e"
+    },
+    {
+        "path": "robots.txt",
+        "type": "file",
+        "md5": "4dd7844fc292acbbe9b816d65d53b08e"
+    },
+    {
+        "path": "sitemap.xml",
+        "type": "file",
+        "md5": "4c6619835207c957e6613c0ab15f2d8e"
+    },
+    {
+        "path": "sitemap.xsl",
+        "type": "file",
+        "md5": "03c2f9a7fdcc46ff05c435907614a0b8"
+    },
+    {
+        "path": "tags",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tags/index.html",
+        "type": "file",
+        "md5": "4d236f16f973887581e86a0a24fba726"
+    }
+]

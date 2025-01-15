@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>cj.llampsitrons.github.io</title>
-    <link href="file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview/feed.xml" rel="self" />
-    <link href="file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview" />
-    <updated>1970-01-01T01:00:00+01:00</updated>
+    <link href="file:///C:\Users\Jofre\Documents\Publii\sites\cj-llampsitrons.github.io\preview/feed.xml" rel="self" />
+    <link href="file:///C:\Users\Jofre\Documents\Publii\sites\cj-llampsitrons.github.io\preview" />
+    <updated>2025-01-15T18:58:01+01:00</updated>
     <author>
         <name>Llamps i Trons</name>
     </author>
-    <id>file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview</id>
+    <id>file:///C:\Users\Jofre\Documents\Publii\sites\cj-llampsitrons.github.io\preview</id>
 
+    <entry>
+        <title>Hello world</title>
+        <author>
+            <name>Llamps i Trons</name>
+        </author>
+        <link href="file:///C:\Users\Jofre\Documents\Publii\sites\cj-llampsitrons.github.io\preview/hello-world/index.html"/>
+        <id>file:///C:\Users\Jofre\Documents\Publii\sites\cj-llampsitrons.github.io\preview/hello-world/index.html</id>
+
+        <updated>2025-01-15T18:58:01+01:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
 </feed>

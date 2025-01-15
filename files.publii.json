@@ -2,7 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "b62e658495f8e3b57664138c4264b63c"
+        "md5": "63e63ef204c8830957ab7916784ce423"
     },
     {
         "path": "activitats",
@@ -12,7 +12,7 @@
     {
         "path": "/activitats/index.html",
         "type": "file",
-        "md5": "ecef8532f2310598706e5495a6ca7951"
+        "md5": "854559cbd935b6904f45d7b52fd0aedd"
     },
     {
         "path": "assets",
@@ -27,22 +27,22 @@
     {
         "path": "/assets/css/editor.css",
         "type": "file",
-        "md5": "e5909a88ba1158a79ba2dbf82d6b2d86"
+        "md5": "4202808df745f2ac7ab250606fa0d272"
     },
     {
         "path": "/assets/css/fontawesome-all.min.css",
         "type": "file",
-        "md5": "85514f933f9e0b82460af63f1a403fa5"
+        "md5": "a00e1bec9bab5f665438ad469499ed81"
     },
     {
         "path": "/assets/css/main.css",
         "type": "file",
-        "md5": "c1fa3bff515fbf17ac18af606a83874a"
+        "md5": "688cb28c25f88280a1b680d010cbe6fc"
     },
     {
         "path": "/assets/css/noscript.css",
         "type": "file",
-        "md5": "efa867a99f5064d6729e4dc2008ad50b"
+        "md5": "c3bc3bbb5aa1287f1f948dad5a327490"
     },
     {
         "path": "/assets/css/style.css",
@@ -72,17 +72,17 @@
     {
         "path": "/assets/js/breakpoints.min.js",
         "type": "file",
-        "md5": "81a479eb099e3b187613943b085923b8"
+        "md5": "d3022c8af7963ec46aa3692f5948a1ba"
     },
     {
         "path": "/assets/js/browser.min.js",
         "type": "file",
-        "md5": "c07298dd19048a8a69ad97e754dfe8d0"
+        "md5": "4ebb0929ae5211dcb31336073eba2432"
     },
     {
         "path": "/assets/js/jquery.min.js",
         "type": "file",
-        "md5": "c9771cc3e90e18f5336eedbd0fffb2cf"
+        "md5": "b83db83a1d89113ee03ab730efa48c7a"
     },
     {
         "path": "/assets/js/jquery.scrollex.min.js",
@@ -172,7 +172,7 @@
     {
         "path": "/authors/llamps-i-trons/index.html",
         "type": "file",
-        "md5": "66026561dd2073b927ad97a4e627eb41"
+        "md5": "914d9a9ee41552ed30d69bcd0a5efa6f"
     },
     {
         "path": "contacte",
@@ -182,17 +182,17 @@
     {
         "path": "/contacte/index.html",
         "type": "file",
-        "md5": "e558bcf578a716e32b0318c10236a664"
+        "md5": "a10de806015505c72e69f4274eb712f1"
     },
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "aeaa81515e3b2e599295ca52c8069bda"
+        "md5": "ab68e86e7b920753618e3a77dba8369f"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "b0bb2411e38095877dd8c8ee3eb27ba4"
+        "md5": "e97056c1f2f3e147f6c397cdbfa01158"
     },
     {
         "path": "festa-major-de-la-creu-alta",
@@ -202,12 +202,22 @@
     {
         "path": "/festa-major-de-la-creu-alta/index.html",
         "type": "file",
-        "md5": "35d2caa9b6f31f3505478321c7023d2f"
+        "md5": "c39a8f1dae9e915fa7ad3be5a54b0030"
+    },
+    {
+        "path": "hello-world",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/hello-world/index.html",
+        "type": "file",
+        "md5": "94e3afed2b2f4fe0edf7c00737046f00"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "ceeef8d71683a48f54a9561b0d76b0a9"
+        "md5": "993b57b73b28b288976db0b7b2a78806"
     },
     {
         "path": "marcador",
@@ -217,7 +227,7 @@
     {
         "path": "/marcador/index.html",
         "type": "file",
-        "md5": "0b590d123b41fe59b24b948f2464671b"
+        "md5": "2bcb170059f5043d45fdae054fa35305"
     },
     {
         "path": "media",
@@ -362,7 +372,7 @@
     {
         "path": "/qui-som/index.html",
         "type": "file",
-        "md5": "9fa6329a42de3398a19ca0cfee19adf5"
+        "md5": "6b0505eab3b8b95b329fe2271d62da8e"
     },
     {
         "path": "robots.txt",
@@ -372,7 +382,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "04a6cbdb2264345a8f079c44ff809ef2"
+        "md5": "4c6619835207c957e6613c0ab15f2d8e"
     },
     {
         "path": "sitemap.xsl",
@@ -387,6 +397,6 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "4723118637fdef4646144ca586bf6698"
+        "md5": "4d236f16f973887581e86a0a24fba726"
     }
 ]

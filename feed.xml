@@ -3,10 +3,22 @@
     <title>cj.llampsitrons.github.io</title>
     <link href="https://cj-llampsitrons.github.io/feed.xml" rel="self" />
     <link href="https://cj-llampsitrons.github.io" />
-    <updated>1970-01-01T01:00:00+01:00</updated>
+    <updated>2025-01-15T18:58:01+01:00</updated>
     <author>
         <name>Llamps i Trons</name>
     </author>
     <id>https://cj-llampsitrons.github.io</id>
 
+    <entry>
+        <title>Hello world</title>
+        <author>
+            <name>Llamps i Trons</name>
+        </author>
+        <link href="https://cj-llampsitrons.github.io/hello-world/"/>
+        <id>https://cj-llampsitrons.github.io/hello-world/</id>
+
+        <updated>2025-01-15T18:58:01+01:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
 </feed>

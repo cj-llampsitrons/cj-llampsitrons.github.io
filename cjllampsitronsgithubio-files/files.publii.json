@@ -2,7 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "81bb0f9763817e105b29c4c268c3f7c2"
+        "md5": "a56b08562b5c82dc065e5347127150c4"
     },
     {
         "path": "61950734_307767983483120_3167179105965942738_n.jpg",
@@ -17,7 +17,7 @@
     {
         "path": "/activitats/index.html",
         "type": "file",
-        "md5": "87b5dbfd531c45cbfa39294d6332e184"
+        "md5": "b239a3446344c52049a586322bc83a52"
     },
     {
         "path": "assets",
@@ -177,7 +177,7 @@
     {
         "path": "/authors/llamps-i-trons/index.html",
         "type": "file",
-        "md5": "22293e95a895645c6a034e20993d736c"
+        "md5": "72d5d8f4e3fe020e9a94147d96b5eabc"
     },
     {
         "path": "CNAME",
@@ -192,7 +192,7 @@
     {
         "path": "/contacte/index.html",
         "type": "file",
-        "md5": "bd671fb4d6db7aea3ce124140df3f7b5"
+        "md5": "9d5985ff7a321a5a2161126d52eb8d15"
     },
     {
         "path": "feed.json",
@@ -212,7 +212,7 @@
     {
         "path": "/festa-major-de-la-creu-alta/index.html",
         "type": "file",
-        "md5": "cec4561874d05987c4862bb9343fb1e9"
+        "md5": "ae253c62e40405374cacd0e0ba966230"
     },
     {
         "path": "hello-world",
@@ -222,12 +222,12 @@
     {
         "path": "/hello-world/index.html",
         "type": "file",
-        "md5": "e59b41d364a3af13df59c56eafc5116d"
+        "md5": "82f526c87fa78b9e5e5cbca04db7f55b"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "9b67b3159896d6ef7c5422ec4dcd9acf"
+        "md5": "c1857e6865b8482e6651e795b3f68d6b"
     },
     {
         "path": "marcador",
@@ -237,7 +237,7 @@
     {
         "path": "/marcador/index.html",
         "type": "file",
-        "md5": "f75ff084c3dafb6026d47876166f265c"
+        "md5": "84edbd2989ce4542768b1f107c0677be"
     },
     {
         "path": "media",
@@ -335,11 +335,6 @@
         "md5": false
     },
     {
-        "path": "/media/website/61950734_307767983483120_3167179105965942738_n.jpg",
-        "type": "file",
-        "md5": "dea800ff02d08a51f3d1784a8abb0310"
-    },
-    {
         "path": "/media/website/capcalera_logoCoord.png",
         "type": "file",
         "md5": "bda7afcc420718fffbfbc2c3bf2f80e3"
@@ -348,36 +343,6 @@
         "path": "media/website/responsive",
         "type": "directory",
         "md5": false
-    },
-    {
-        "path": "/media/website/responsive/61950734_307767983483120_3167179105965942738_n-2xl.jpg",
-        "type": "file",
-        "md5": "2c7493ec22d03e93d469897d57dc141c"
-    },
-    {
-        "path": "/media/website/responsive/61950734_307767983483120_3167179105965942738_n-lg.jpg",
-        "type": "file",
-        "md5": "9b894abce75ef365f5a7c7f3008e4d13"
-    },
-    {
-        "path": "/media/website/responsive/61950734_307767983483120_3167179105965942738_n-md.jpg",
-        "type": "file",
-        "md5": "d4c0de28e6805c8dc3621d0a08782962"
-    },
-    {
-        "path": "/media/website/responsive/61950734_307767983483120_3167179105965942738_n-sm.jpg",
-        "type": "file",
-        "md5": "06e42c2ebbdc00181b563a46c5770fa0"
-    },
-    {
-        "path": "/media/website/responsive/61950734_307767983483120_3167179105965942738_n-xl.jpg",
-        "type": "file",
-        "md5": "2c7493ec22d03e93d469897d57dc141c"
-    },
-    {
-        "path": "/media/website/responsive/61950734_307767983483120_3167179105965942738_n-xs.jpg",
-        "type": "file",
-        "md5": "2ed87c1d3d650b55fa7d06ac7aeb6b80"
     },
     {
         "path": "/media/website/responsive/capcalera_logoCoord-2xl.png",
@@ -417,7 +382,7 @@
     {
         "path": "/qui-som/index.html",
         "type": "file",
-        "md5": "9c9a20eaa0ebffabb0db53dd654f519c"
+        "md5": "53b69fe721c3a5d9c315d031667e85a0"
     },
     {
         "path": "robots.txt",
@@ -442,6 +407,6 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "2144a108400c2560b2eeb76dc0c75c2d"
+        "md5": "c182912dff98064256ace93c6ff25e54"
     }
 ]

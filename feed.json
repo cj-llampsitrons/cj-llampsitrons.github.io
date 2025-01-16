@@ -2,17 +2,17 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "cj.llampsitrons.github.io",
     "description": "",
-    "home_page_url": "https://cj-llampsitrons.github.io",
-    "feed_url": "https://cj-llampsitrons.github.io/feed.json",
+    "home_page_url": "https://lacreualtallampsitrons.cat",
+    "feed_url": "https://lacreualtallampsitrons.cat/feed.json",
     "user_comment": "",
-    "icon": "https://cj-llampsitrons.github.io/media/website/capcalera_logoCoord.png",
+    "icon": "https://lacreualtallampsitrons.cat/media/website/capcalera_logoCoord.png",
     "author": {
         "name": "Llamps i Trons"
     },
     "items": [
         {
-            "id": "https://cj-llampsitrons.github.io/hello-world/",
-            "url": "https://cj-llampsitrons.github.io/hello-world/",
+            "id": "https://lacreualtallampsitrons.cat/hello-world/",
+            "url": "https://lacreualtallampsitrons.cat/hello-world/",
             "title": "Hello world",
             "author": {
                 "name": "Llamps i Trons"

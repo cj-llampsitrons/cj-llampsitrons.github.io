@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>cj.llampsitrons.github.io</title>
-    <link href="https://cj-llampsitrons.github.io/feed.xml" rel="self" />
-    <link href="https://cj-llampsitrons.github.io" />
+    <link href="https://lacreualtallampsitrons.cat/feed.xml" rel="self" />
+    <link href="https://lacreualtallampsitrons.cat" />
     <updated>2025-01-15T18:58:01+01:00</updated>
     <author>
         <name>Llamps i Trons</name>
     </author>
-    <id>https://cj-llampsitrons.github.io</id>
+    <id>https://lacreualtallampsitrons.cat</id>
 
     <entry>
         <title>Hello world</title>
         <author>
             <name>Llamps i Trons</name>
         </author>
-        <link href="https://cj-llampsitrons.github.io/hello-world/"/>
-        <id>https://cj-llampsitrons.github.io/hello-world/</id>
+        <link href="https://lacreualtallampsitrons.cat/hello-world/"/>
+        <id>https://lacreualtallampsitrons.cat/hello-world/</id>
 
         <updated>2025-01-15T18:58:01+01:00</updated>
             <summary></summary>

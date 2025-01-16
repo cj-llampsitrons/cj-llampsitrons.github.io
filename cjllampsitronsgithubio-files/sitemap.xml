@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://cj-llampsitrons.github.io/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://lacreualtallampsitrons.cat/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://cj-llampsitrons.github.io/</loc>
+<loc>https://lacreualtallampsitrons.cat/</loc>
 </url>
 <url>
-<loc>https://cj-llampsitrons.github.io/activitats/</loc>
+<loc>https://lacreualtallampsitrons.cat/activitats/</loc>
 <lastmod>2024-12-16T10:12:37+01:00</lastmod>
 </url>
 <url>
-<loc>https://cj-llampsitrons.github.io/contacte/</loc>
+<loc>https://lacreualtallampsitrons.cat/contacte/</loc>
 <lastmod>2024-12-16T10:12:29+01:00</lastmod>
 </url>
 <url>
-<loc>https://cj-llampsitrons.github.io/festa-major-de-la-creu-alta/</loc>
+<loc>https://lacreualtallampsitrons.cat/festa-major-de-la-creu-alta/</loc>
 <lastmod>2024-12-16T10:12:34+01:00</lastmod>
 </url>
 <url>
-<loc>https://cj-llampsitrons.github.io/marcador/</loc>
+<loc>https://lacreualtallampsitrons.cat/hello-world/</loc>
+<lastmod>2025-01-15T18:58:01+01:00</lastmod>
+</url>
+<url>
+<loc>https://lacreualtallampsitrons.cat/marcador/</loc>
 <lastmod>2024-12-16T11:04:49+01:00</lastmod>
 <image:image>
-<image:loc>https://cj-llampsitrons.github.io/media/posts/1/DEU-TRO.png</image:loc>
+<image:loc>https://lacreualtallampsitrons.cat/media/posts/1/DEU-TRO.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://cj-llampsitrons.github.io/media/posts/1/DEU-LLAMP.png</image:loc>
+<image:loc>https://lacreualtallampsitrons.cat/media/posts/1/DEU-LLAMP.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://cj-llampsitrons.github.io/qui-som/</loc>
+<loc>https://lacreualtallampsitrons.cat/qui-som/</loc>
 <lastmod>2024-12-16T10:12:41+01:00</lastmod>
 </url>
 </urlset>

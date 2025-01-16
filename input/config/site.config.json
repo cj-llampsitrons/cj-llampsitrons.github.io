@@ -1,13 +1,14 @@
 {
     "uuid": "uuid-1734082177348-944842226",
-    "name": "cj-llampsitrons.github.io",
+    "name": "cjllampsitronsgithubio",
     "displayName": "cj.llampsitrons.github.io",
+    "description": "",
     "synced": "synced",
     "logo": {
         "color": 1,
         "icon": "web-pizza"
     },
-    "domain": "https://cj-llampsitrons.github.io",
+    "domain": "https://lacreualtallampsitrons.cat",
     "language": "en-gb",
     "spellchecking": false,
     "advanced": {
@@ -235,5 +236,5 @@
         }
     },
     "theme": "massively",
-    "syncDate": 1736963909894
+    "syncDate": 1737036604550
 }

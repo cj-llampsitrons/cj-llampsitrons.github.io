@@ -2,7 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "b62e658495f8e3b57664138c4264b63c"
+        "md5": "196fb2721a758c302b9f1943c1e47a5b"
     },
     {
         "path": "activitats",
@@ -12,7 +12,7 @@
     {
         "path": "/activitats/index.html",
         "type": "file",
-        "md5": "ecef8532f2310598706e5495a6ca7951"
+        "md5": "db3b8a5ed93272af2565e21c42e30555"
     },
     {
         "path": "assets",
@@ -172,7 +172,7 @@
     {
         "path": "/authors/llamps-i-trons/index.html",
         "type": "file",
-        "md5": "66026561dd2073b927ad97a4e627eb41"
+        "md5": "8c2e1b52c756d737ad240c9e09301730"
     },
     {
         "path": "contacte",
@@ -182,17 +182,17 @@
     {
         "path": "/contacte/index.html",
         "type": "file",
-        "md5": "e558bcf578a716e32b0318c10236a664"
+        "md5": "af7da9348010fbf794786fffddd0f523"
     },
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "aeaa81515e3b2e599295ca52c8069bda"
+        "md5": "a72b76e472d6b92bf94e519a03bded22"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "b0bb2411e38095877dd8c8ee3eb27ba4"
+        "md5": "26217f0c3321cde9f9689269f9e9cbb9"
     },
     {
         "path": "festa-major-de-la-creu-alta",
@@ -202,12 +202,22 @@
     {
         "path": "/festa-major-de-la-creu-alta/index.html",
         "type": "file",
-        "md5": "35d2caa9b6f31f3505478321c7023d2f"
+        "md5": "a82068808a4058bf02c9394a0d15582d"
+    },
+    {
+        "path": "hello-world",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/hello-world/index.html",
+        "type": "file",
+        "md5": "d7548fd4b514c0ee11d2ff62ec9c375c"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "ceeef8d71683a48f54a9561b0d76b0a9"
+        "md5": "1770eab27b7b2391c6e002f126e568d6"
     },
     {
         "path": "marcador",
@@ -217,7 +227,7 @@
     {
         "path": "/marcador/index.html",
         "type": "file",
-        "md5": "0b590d123b41fe59b24b948f2464671b"
+        "md5": "4bd49c8d1b0ced8dc661f798e95b2fc9"
     },
     {
         "path": "media",
@@ -362,17 +372,17 @@
     {
         "path": "/qui-som/index.html",
         "type": "file",
-        "md5": "9fa6329a42de3398a19ca0cfee19adf5"
+        "md5": "15637cfd6b0719840fd564014025b8ff"
     },
     {
         "path": "robots.txt",
         "type": "file",
-        "md5": "4dd7844fc292acbbe9b816d65d53b08e"
+        "md5": "9bd9ad9e6f4842fd465fcdbca7450dec"
     },
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "04a6cbdb2264345a8f079c44ff809ef2"
+        "md5": "6758d483598811bc6decc56cf1dbe5d5"
     },
     {
         "path": "sitemap.xsl",
@@ -387,6 +397,6 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "4723118637fdef4646144ca586bf6698"
+        "md5": "87a50e9df714ec29b3ab1e90d15be300"
     }
 ]

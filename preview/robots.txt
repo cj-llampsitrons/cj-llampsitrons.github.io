@@ -4,4 +4,4 @@ User-agent: GPTBot
 Disallow: /
 User-agent: *
 Disallow:
-Sitemap: file:///C:\Users\Jofre\Documents\Publii\sites\cj-llampsitrons.github.io\preview/sitemap.xml
+Sitemap: file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview/sitemap.xml

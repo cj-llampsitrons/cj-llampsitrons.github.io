@@ -1,0 +1,10 @@
+/*
+ * Put your custom CSS code here
+ */
+
+#intro{
+background-image: linear-gradient(rgba(30, 37, 44, 0.5), rgba(30, 37, 44, 0.5)), url(/61950734_307767983483120_3167179105965942738_n.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}

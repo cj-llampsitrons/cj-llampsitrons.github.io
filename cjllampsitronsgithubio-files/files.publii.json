@@ -192,7 +192,7 @@
     {
         "path": "/contacte/index.html",
         "type": "file",
-        "md5": "0596b237d42e930c78da35d59bb02a88"
+        "md5": "19af628c5662f80a30b0147f04353feb"
     },
     {
         "path": "feed.json",
@@ -597,7 +597,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "d6805b0eac47acb70d72afc073195f78"
+        "md5": "20fdfd408cd5635b052e9db4b62be4f6"
     },
     {
         "path": "sitemap.xsl",

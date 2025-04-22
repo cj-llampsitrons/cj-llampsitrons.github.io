@@ -212,12 +212,12 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "296de8debfbdd5b50da44c78b383673c"
+        "md5": "3bcaaa9796bbf84046472847d8ac7acd"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "362a7415c6f66c4d4a01266788481e52"
+        "md5": "295fce1c54354b78c9c4e2b2dc22ddea"
     },
     {
         "path": "festa-major-2025",
@@ -227,7 +227,7 @@
     {
         "path": "/festa-major-2025/index.html",
         "type": "file",
-        "md5": "37dba6098411bfd412c9847f7ceb727e"
+        "md5": "bca5f048d146946b8b906cf1d6d454bc"
     },
     {
         "path": "festa-major-de-la-creu-alta",
@@ -852,7 +852,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "f0ba59a317e76ef28fbb2d0ebe887d13"
+        "md5": "647cb136f09d7f27fd646c1c6bf151d5"
     },
     {
         "path": "sitemap.xsl",

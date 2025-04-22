@@ -47,7 +47,7 @@
         "socialVimeo": "",
         "socialPinterest": "",
         "socialYoutube": "",
-        "copyrightText": "<ul>\n<li>Coordinadora Jove de la Creu Alta \"Llamps i Trons\"</li>\n</ul>",
+        "copyrightText": "<ul>\n<li>Coordinadora Jove de la Creu Alta \"Llamps i Trons\"</li>\n</ul>\n<p class=\"align-center\" style=\"padding-top: 30px;\"><a href=\"https://instagram.com/llampsitrons\" target=\"_blank\" rel=\"noopener\">[fi=instagram]</a>          <a href=\"https://twitter.com/llampsitrons\" target=\"_blank\" rel=\"noopener\">[fi=twitter]</a>          <a href=\"https://www.google.com/maps?ll=41.555944,2.102388&amp;z=16&amp;t=m&amp;hl=ca&amp;gl=ES&amp;mapclient=embed&amp;cid=5111388773219777051\" target=\"_blank\" rel=\"noopener\">[fi=map-pin]</a></p>",
         "galleryItemGap": "0.28333rem",
         "formatDate": "D MMMM YYYY",
         "formatDateCustom": "HH:mm:ss YY/MM/DD",

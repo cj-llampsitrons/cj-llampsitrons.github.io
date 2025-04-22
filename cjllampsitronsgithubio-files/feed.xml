@@ -3,22 +3,32 @@
     <title>cj.llampsitrons.github.io</title>
     <link href="https://lacreualtallampsitrons.cat/feed.xml" rel="self" />
     <link href="https://lacreualtallampsitrons.cat" />
-    <updated>2025-01-15T18:58:01+01:00</updated>
+    <updated>2025-04-22T14:17:04+02:00</updated>
     <author>
         <name>Llamps i Trons</name>
     </author>
     <id>https://lacreualtallampsitrons.cat</id>
 
     <entry>
-        <title>Hello world</title>
+        <title>Festa Major 2025</title>
         <author>
             <name>Llamps i Trons</name>
         </author>
-        <link href="https://lacreualtallampsitrons.cat/hello-world/"/>
-        <id>https://lacreualtallampsitrons.cat/hello-world/</id>
+        <link href="https://lacreualtallampsitrons.cat/festa-major-2025/"/>
+        <id>https://lacreualtallampsitrons.cat/festa-major-2025/</id>
 
-        <updated>2025-01-15T18:58:01+01:00</updated>
-            <summary></summary>
-        <content></content>
+        <updated>2025-04-22T14:14:03+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Ja tenim el cartell de concerts per a la Festa Major de la Creu Alta 2025. Guardeu-vos la data perquè no us la&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Ja tenim el cartell de concerts per a la Festa Major de la Creu Alta 2025. Guardeu-vos la data perquè no us la podeu perdre. No hi ha altra festa igual!</p>
+<p>[CARTELL]</p>
+<p>Enguany, com a novetat, podreu seguir els resultats de les proves puntuables a https://lacreualtallampsitrons.cat/marcador/</p>
+            ]]>
+        </content>
     </entry>
 </feed>

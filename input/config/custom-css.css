@@ -8,3 +8,7 @@ background-image: linear-gradient(rgba(30, 37, 44, 0.5), rgba(30, 37, 44, 0.5)),
     background-position: top;
     background-size: cover;
 }
+
+.post__inner {
+    text-align: justify;
+}

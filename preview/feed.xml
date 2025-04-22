@@ -3,22 +3,32 @@
     <title>cj.llampsitrons.github.io</title>
     <link href="file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview/feed.xml" rel="self" />
     <link href="file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview" />
-    <updated>2025-01-15T18:58:01+01:00</updated>
+    <updated>2025-04-22T14:17:04+02:00</updated>
     <author>
         <name>Llamps i Trons</name>
     </author>
     <id>file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview</id>
 
     <entry>
-        <title>Hello world</title>
+        <title>Festa Major 2025</title>
         <author>
             <name>Llamps i Trons</name>
         </author>
-        <link href="file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview/hello-world/index.html"/>
-        <id>file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview/hello-world/index.html</id>
+        <link href="file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview/festa-major-2025/index.html"/>
+        <id>file:///C:\Users\mtome\Documents\MEGAsync\Informatica\Publii\Webs guardades\cjllampsitronsgithubio\preview/festa-major-2025/index.html</id>
 
-        <updated>2025-01-15T18:58:01+01:00</updated>
-            <summary></summary>
-        <content></content>
+        <updated>2025-04-22T14:14:03+02:00</updated>
+            <summary>
+                <![CDATA[
+                    Ja tenim el cartell de concerts per a la Festa Major de la Creu Alta 2025. Guardeu-vos la data perquè no us la&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Ja tenim el cartell de concerts per a la Festa Major de la Creu Alta 2025. Guardeu-vos la data perquè no us la podeu perdre. No hi ha altra festa igual!</p>
+<p>[CARTELL]</p>
+<p>Enguany, com a novetat, podreu seguir els resultats de les proves puntuables a https://lacreualtallampsitrons.cat/marcador/</p>
+            ]]>
+        </content>
     </entry>
 </feed>

@@ -1,6 +1,6 @@
 {
     "docSearch": false,
-    "featherIcons": false,
+    "featherIcons": true,
     "googleAnalyticsIntegration": false,
     "googleCustomSearch": false,
     "imageDecoding": false,

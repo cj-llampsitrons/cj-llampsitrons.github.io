@@ -222,12 +222,12 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "ee1a96ad2c61dc7b0d43a818e92598e4"
+        "md5": "057cb1ef1828548c020e47d8290e8e31"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "7ae8b92ce54ec91b254bc788f8e561a3"
+        "md5": "2bb4b61603bab8594bd731023d80c7c5"
     },
     {
         "path": "festa-major-2025",
@@ -237,7 +237,7 @@
     {
         "path": "/festa-major-2025/index.html",
         "type": "file",
-        "md5": "412dc496c4624294d870b9c3895df104"
+        "md5": "66fda8d529427024f6d7f39874a4f5f7"
     },
     {
         "path": "festa-major-de-la-creu-alta",
@@ -252,7 +252,7 @@
     {
         "path": "gimcana_tallaret_2025.pdf",
         "type": "file",
-        "md5": "0bb000a364fe032d71a6cca215d3dc49"
+        "md5": "9ff7431e46071621ac2c6f9ca217be9b"
     },
     {
         "path": "index.html",
@@ -987,7 +987,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "0b9cdcac058caade94e6d658f6b42bf6"
+        "md5": "e92838811be431dc61ab0391e099506d"
     },
     {
         "path": "sitemap.xsl",

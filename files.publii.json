@@ -195,6 +195,16 @@
         "md5": "13b81afe93c0edd729fa46bed2fc5bd3"
     },
     {
+        "path": "Bases_Concurs_Instagram_2025.pdf",
+        "type": "file",
+        "md5": "0f305bf875bda9c8b9cd9e62244471b1"
+    },
+    {
+        "path": "CARTELL.jpg",
+        "type": "file",
+        "md5": "c70306bfa2ba05824bacb1268c25f8cb"
+    },
+    {
         "path": "CNAME",
         "type": "file",
         "md5": "6616cd19c68a7e4075030692f353ed6e"
@@ -212,12 +222,12 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "742345ffca2b6845d3940e108793047c"
+        "md5": "ee1a96ad2c61dc7b0d43a818e92598e4"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "1d3bc224356083426551383cd768414b"
+        "md5": "7ae8b92ce54ec91b254bc788f8e561a3"
     },
     {
         "path": "festa-major-2025",
@@ -227,7 +237,7 @@
     {
         "path": "/festa-major-2025/index.html",
         "type": "file",
-        "md5": "b79818338902befc5ce10b6ad64291c8"
+        "md5": "412dc496c4624294d870b9c3895df104"
     },
     {
         "path": "festa-major-de-la-creu-alta",
@@ -240,9 +250,14 @@
         "md5": "88f4abf8069164599fe6508afbfd5ade"
     },
     {
+        "path": "gimcana_tallaret_2025.pdf",
+        "type": "file",
+        "md5": "0bb000a364fe032d71a6cca215d3dc49"
+    },
+    {
         "path": "index.html",
         "type": "file",
-        "md5": "64b9a880ed203281712e57c6ff5f68db"
+        "md5": "8f5915bdc6fe6648d08a09fbb056d311"
     },
     {
         "path": "marcador",
@@ -800,9 +815,29 @@
         "md5": false
     },
     {
-        "path": "/media/posts/7/cartell-FM-2025.jpg",
+        "path": "/media/posts/7/CARTELL-2.jpg",
         "type": "file",
         "md5": "c70306bfa2ba05824bacb1268c25f8cb"
+    },
+    {
+        "path": "media/posts/7/gallery",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/7/gallery/CARTELL-2.jpg",
+        "type": "file",
+        "md5": "c70306bfa2ba05824bacb1268c25f8cb"
+    },
+    {
+        "path": "/media/posts/7/gallery/PUNTUABLES-2.png",
+        "type": "file",
+        "md5": "0fac9f185e68850ce3a0d32561a6f073"
+    },
+    {
+        "path": "/media/posts/7/PUNTUABLES-2.png",
+        "type": "file",
+        "md5": "0fac9f185e68850ce3a0d32561a6f073"
     },
     {
         "path": "media/posts/7/responsive",
@@ -810,34 +845,64 @@
         "md5": false
     },
     {
-        "path": "/media/posts/7/responsive/cartell-FM-2025-2xl.jpg",
+        "path": "/media/posts/7/responsive/CARTELL-2-2xl.jpg",
         "type": "file",
         "md5": "4f3de892d25c3e887fe196b4988a5d18"
     },
     {
-        "path": "/media/posts/7/responsive/cartell-FM-2025-lg.jpg",
+        "path": "/media/posts/7/responsive/CARTELL-2-lg.jpg",
         "type": "file",
         "md5": "935aeae696393866918b07bc3a3a4935"
     },
     {
-        "path": "/media/posts/7/responsive/cartell-FM-2025-md.jpg",
+        "path": "/media/posts/7/responsive/CARTELL-2-md.jpg",
         "type": "file",
         "md5": "c1c8909370e7a56ddc1070b9e5817070"
     },
     {
-        "path": "/media/posts/7/responsive/cartell-FM-2025-sm.jpg",
+        "path": "/media/posts/7/responsive/CARTELL-2-sm.jpg",
         "type": "file",
         "md5": "a8eed3890d27ae7b39470ffc933d42ee"
     },
     {
-        "path": "/media/posts/7/responsive/cartell-FM-2025-xl.jpg",
+        "path": "/media/posts/7/responsive/CARTELL-2-xl.jpg",
         "type": "file",
         "md5": "4f3de892d25c3e887fe196b4988a5d18"
     },
     {
-        "path": "/media/posts/7/responsive/cartell-FM-2025-xs.jpg",
+        "path": "/media/posts/7/responsive/CARTELL-2-xs.jpg",
         "type": "file",
         "md5": "997b067db8b27cddca6b1898dc64890f"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-2xl.png",
+        "type": "file",
+        "md5": "84df0481c3f16b69453280612200b08d"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-lg.png",
+        "type": "file",
+        "md5": "e3f7d7ffd1e1128d53076be2535151cf"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-md.png",
+        "type": "file",
+        "md5": "08d633d3fba66b6a512b90fb61058da9"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-sm.png",
+        "type": "file",
+        "md5": "18cb4f0b2cd586500192d9725ad1cf7c"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-xl.png",
+        "type": "file",
+        "md5": "84df0481c3f16b69453280612200b08d"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-xs.png",
+        "type": "file",
+        "md5": "54ecb62db9ebff8d8f51a236e3346ee1"
     },
     {
         "path": "media/website",
@@ -890,6 +955,21 @@
         "md5": "8af391efc78bc409457e8ba68c09db3b"
     },
     {
+        "path": "Normes_cursa_carretons_2025.pdf",
+        "type": "file",
+        "md5": "6c9a17035bc6324354786bf6e6aa267a"
+    },
+    {
+        "path": "Normes_Joc_del_rotllo_2025.pdf",
+        "type": "file",
+        "md5": "0e2537eb9e3ea5642b04dd0f8563721d"
+    },
+    {
+        "path": "PUNTUABLES.png",
+        "type": "file",
+        "md5": "0fac9f185e68850ce3a0d32561a6f073"
+    },
+    {
         "path": "qui-som",
         "type": "directory",
         "md5": false
@@ -907,7 +987,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "35e5a24b4ecac8466849c146438c2bf3"
+        "md5": "8b0e18f45a5550e2181505c6d8237c73"
     },
     {
         "path": "sitemap.xsl",

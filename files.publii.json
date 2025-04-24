@@ -1,0 +1,1007 @@
+[
+    {
+        "path": "404.html",
+        "type": "file",
+        "md5": "a9851c8af4ad229106ac32515ecd1431"
+    },
+    {
+        "path": "61950734_307767983483120_3167179105965942738_n.jpg",
+        "type": "file",
+        "md5": "dea800ff02d08a51f3d1784a8abb0310"
+    },
+    {
+        "path": "activitats",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/activitats/index.html",
+        "type": "file",
+        "md5": "2f271663a57ee289168cff68f63c95be"
+    },
+    {
+        "path": "assets",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "assets/css",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/css/editor.css",
+        "type": "file",
+        "md5": "e5909a88ba1158a79ba2dbf82d6b2d86"
+    },
+    {
+        "path": "/assets/css/fontawesome-all.min.css",
+        "type": "file",
+        "md5": "85514f933f9e0b82460af63f1a403fa5"
+    },
+    {
+        "path": "/assets/css/main.css",
+        "type": "file",
+        "md5": "c1fa3bff515fbf17ac18af606a83874a"
+    },
+    {
+        "path": "/assets/css/noscript.css",
+        "type": "file",
+        "md5": "efa867a99f5064d6729e4dc2008ad50b"
+    },
+    {
+        "path": "/assets/css/style.css",
+        "type": "file",
+        "md5": "b53a705bc716d6b1514f2fca7292eb3d"
+    },
+    {
+        "path": "assets/dynamic",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "assets/dynamic/fonts",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "assets/dynamic/fonts/robotoslab",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/dynamic/fonts/robotoslab/robotoslab.woff2",
+        "type": "file",
+        "md5": "bb6d76ffefc4cc4bf748676e5920a798"
+    },
+    {
+        "path": "assets/images",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/images/overlay.png",
+        "type": "file",
+        "md5": "34aca8cf1dcd5a4077c26c80950d00c6"
+    },
+    {
+        "path": "assets/js",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/js/breakpoints.min.js",
+        "type": "file",
+        "md5": "81a479eb099e3b187613943b085923b8"
+    },
+    {
+        "path": "/assets/js/browser.min.js",
+        "type": "file",
+        "md5": "c07298dd19048a8a69ad97e754dfe8d0"
+    },
+    {
+        "path": "/assets/js/jquery.min.js",
+        "type": "file",
+        "md5": "c9771cc3e90e18f5336eedbd0fffb2cf"
+    },
+    {
+        "path": "/assets/js/jquery.scrollex.min.js",
+        "type": "file",
+        "md5": "f89065e3d988006af9791b44561d7c90"
+    },
+    {
+        "path": "/assets/js/jquery.scrolly.min.js",
+        "type": "file",
+        "md5": "1ed5a78bde1476875a40f6b9ff44fc14"
+    },
+    {
+        "path": "/assets/js/main.js",
+        "type": "file",
+        "md5": "d5433762aebe47e7d1471db6d18f28ae"
+    },
+    {
+        "path": "/assets/js/main.min.js",
+        "type": "file",
+        "md5": "56233c354bd814758be8bff42f7e13a5"
+    },
+    {
+        "path": "/assets/js/util.js",
+        "type": "file",
+        "md5": "fd2716a7b68ce7748c9676787b61db43"
+    },
+    {
+        "path": "/assets/js/util.min.js",
+        "type": "file",
+        "md5": "4201a626f8c9b614a663b3a1d7d82615"
+    },
+    {
+        "path": "assets/webfonts",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/webfonts/fa-brands-400.ttf",
+        "type": "file",
+        "md5": "7d09abecdcbd61d9f7eed02ad7ed9f3e"
+    },
+    {
+        "path": "/assets/webfonts/fa-brands-400.woff2",
+        "type": "file",
+        "md5": "12129ae64db69ed98868da86ad4542b6"
+    },
+    {
+        "path": "/assets/webfonts/fa-regular-400.ttf",
+        "type": "file",
+        "md5": "49db3589f7cc4e2c2fbd61073450b881"
+    },
+    {
+        "path": "/assets/webfonts/fa-regular-400.woff2",
+        "type": "file",
+        "md5": "1183f80a7de1312c6aaed6cb2040d26b"
+    },
+    {
+        "path": "/assets/webfonts/fa-solid-900.ttf",
+        "type": "file",
+        "md5": "f4242a99ea504fbf8ddefb40c853de4d"
+    },
+    {
+        "path": "/assets/webfonts/fa-solid-900.woff2",
+        "type": "file",
+        "md5": "de8cf878500c5ec452ae912ddb9c7aaa"
+    },
+    {
+        "path": "/assets/webfonts/fa-v4compatibility.ttf",
+        "type": "file",
+        "md5": "d38445641a866e80bccf9cb4c4a03de8"
+    },
+    {
+        "path": "/assets/webfonts/fa-v4compatibility.woff2",
+        "type": "file",
+        "md5": "5f14f683621dbaf2d3644848b74c5a7f"
+    },
+    {
+        "path": "authors",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "authors/llamps-i-trons",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/authors/llamps-i-trons/index.html",
+        "type": "file",
+        "md5": "13b81afe93c0edd729fa46bed2fc5bd3"
+    },
+    {
+        "path": "Bases_Concurs_Instagram_2025.pdf",
+        "type": "file",
+        "md5": "0f305bf875bda9c8b9cd9e62244471b1"
+    },
+    {
+        "path": "CARTELL.jpg",
+        "type": "file",
+        "md5": "c70306bfa2ba05824bacb1268c25f8cb"
+    },
+    {
+        "path": "CNAME",
+        "type": "file",
+        "md5": "6616cd19c68a7e4075030692f353ed6e"
+    },
+    {
+        "path": "contacte",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/contacte/index.html",
+        "type": "file",
+        "md5": "4e996e6b11b1f1d634af3e47482154ba"
+    },
+    {
+        "path": "feed.json",
+        "type": "file",
+        "md5": "ee1a96ad2c61dc7b0d43a818e92598e4"
+    },
+    {
+        "path": "feed.xml",
+        "type": "file",
+        "md5": "7ae8b92ce54ec91b254bc788f8e561a3"
+    },
+    {
+        "path": "festa-major-2025",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/festa-major-2025/index.html",
+        "type": "file",
+        "md5": "412dc496c4624294d870b9c3895df104"
+    },
+    {
+        "path": "festa-major-de-la-creu-alta",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/festa-major-de-la-creu-alta/index.html",
+        "type": "file",
+        "md5": "88f4abf8069164599fe6508afbfd5ade"
+    },
+    {
+        "path": "gimcana_tallaret_2025.pdf",
+        "type": "file",
+        "md5": "0bb000a364fe032d71a6cca215d3dc49"
+    },
+    {
+        "path": "index.html",
+        "type": "file",
+        "md5": "8f5915bdc6fe6648d08a09fbb056d311"
+    },
+    {
+        "path": "marcador",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/marcador/index.html",
+        "type": "file",
+        "md5": "c2b27dfcbd763bdef6a5ade33a45fe25"
+    },
+    {
+        "path": "media",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/plugins",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/plugins/featherIcons",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/plugins/featherIcons/feather-sprite.svg",
+        "type": "file",
+        "md5": "09960c3de0fb9233eaac720d45ab4bc5"
+    },
+    {
+        "path": "media/plugins/simpleLightboxGallery",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/plugins/simpleLightboxGallery/venobox.min.css",
+        "type": "file",
+        "md5": "930f3a77f1401f46699d08c218ad3969"
+    },
+    {
+        "path": "/media/plugins/simpleLightboxGallery/venobox.min.js",
+        "type": "file",
+        "md5": "5142acef8a10cb59560be26621ce59d5"
+    },
+    {
+        "path": "media/posts",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts/1",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/1/DEU-LLAMP.png",
+        "type": "file",
+        "md5": "ba22cbeadcd3236039fc37d1089ae615"
+    },
+    {
+        "path": "/media/posts/1/DEU-TRO.png",
+        "type": "file",
+        "md5": "d9e612bdd61d94bbc218a75ea7c45f88"
+    },
+    {
+        "path": "media/posts/1/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-2xl.png",
+        "type": "file",
+        "md5": "c2ea57dd8a4ed1b0175e82994279169a"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-lg.png",
+        "type": "file",
+        "md5": "19fc216167c78c4c3dc12916d9f84c02"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-md.png",
+        "type": "file",
+        "md5": "5ae343b7166fca482680fe051c088687"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-sm.png",
+        "type": "file",
+        "md5": "e25d0c992c71b832d7421b34669c476c"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-xl.png",
+        "type": "file",
+        "md5": "67c9f318109336042b023e22129656d1"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-LLAMP-xs.png",
+        "type": "file",
+        "md5": "ddedb1e10fa32c2fcf7be6a622c84f02"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-2xl.png",
+        "type": "file",
+        "md5": "c4240090fa76f7e5eddcff4edf84b18e"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-lg.png",
+        "type": "file",
+        "md5": "094b443e87b0c1a33bf50507e781cc78"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-md.png",
+        "type": "file",
+        "md5": "a6460147c4e0393fee8a93f08a174e04"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-sm.png",
+        "type": "file",
+        "md5": "f800410b65db2a18870bec582cf4af9f"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-xl.png",
+        "type": "file",
+        "md5": "c7e8c3d4e746b5b226a26238773f8584"
+    },
+    {
+        "path": "/media/posts/1/responsive/DEU-TRO-xs.png",
+        "type": "file",
+        "md5": "d4f7ca94c7bfd0e47a94468d0051de80"
+    },
+    {
+        "path": "media/posts/2",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts/2/gallery",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/2/gallery/2012-12-01-13.43.12-thumbnail.jpg",
+        "type": "file",
+        "md5": "0dae7ebdb4c51c107b8d8c8335b0a459"
+    },
+    {
+        "path": "/media/posts/2/gallery/2012-12-01-13.43.12.jpg",
+        "type": "file",
+        "md5": "b290a3e9ce3ab58266ab94a4058d5874"
+    },
+    {
+        "path": "/media/posts/2/gallery/calcotada-thumbnail.jpg",
+        "type": "file",
+        "md5": "568e88ae5fade02df80d674f99418382"
+    },
+    {
+        "path": "/media/posts/2/gallery/calcotada.jpg",
+        "type": "file",
+        "md5": "9cfbddbb1f7ea00593fd92879f441bad"
+    },
+    {
+        "path": "/media/posts/2/gallery/entrada-thumbnail.jpg",
+        "type": "file",
+        "md5": "1d10582a704dbcc19ff98644557368b9"
+    },
+    {
+        "path": "/media/posts/2/gallery/entrada.jpg",
+        "type": "file",
+        "md5": "7bbf75df36d4a49d9f18699ddab8000e"
+    },
+    {
+        "path": "/media/posts/2/gallery/xerrada_casal-thumbnail.jpg",
+        "type": "file",
+        "md5": "36efa494659795a58679b199fdaf982a"
+    },
+    {
+        "path": "/media/posts/2/gallery/xerrada_casal.jpg",
+        "type": "file",
+        "md5": "22d8cc92e0a3669e0ca71cbc88bf7e92"
+    },
+    {
+        "path": "media/posts/3",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/3/444753235_970463374822406_3237759695782418230_n.jpg",
+        "type": "file",
+        "md5": "27ce48548ea809ee3189e7fc038f2fdc"
+    },
+    {
+        "path": "/media/posts/3/473027310_516782941419266_8212104339670289026_n.jpg",
+        "type": "file",
+        "md5": "0cd64df193f12bb75ca87a64f0e9bce3"
+    },
+    {
+        "path": "/media/posts/3/482696971_18481629307020505_4274159249706350613_n.jpg",
+        "type": "file",
+        "md5": "fc4a51a6ad76b8765afb8b6313b11edf"
+    },
+    {
+        "path": "media/posts/3/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/3/responsive/444753235_970463374822406_3237759695782418230_n-2xl.jpg",
+        "type": "file",
+        "md5": "7dfa91337343d617eb19d4daed592856"
+    },
+    {
+        "path": "/media/posts/3/responsive/444753235_970463374822406_3237759695782418230_n-lg.jpg",
+        "type": "file",
+        "md5": "6941558d23013ae9255fdf63102e543d"
+    },
+    {
+        "path": "/media/posts/3/responsive/444753235_970463374822406_3237759695782418230_n-md.jpg",
+        "type": "file",
+        "md5": "b6e73dd2fe0e0cf4c37d23363670c6d3"
+    },
+    {
+        "path": "/media/posts/3/responsive/444753235_970463374822406_3237759695782418230_n-sm.jpg",
+        "type": "file",
+        "md5": "71ccf9f06738f8881317da8b61ffad2b"
+    },
+    {
+        "path": "/media/posts/3/responsive/444753235_970463374822406_3237759695782418230_n-xl.jpg",
+        "type": "file",
+        "md5": "837abd79f7b2c1b854d8f086c80361c7"
+    },
+    {
+        "path": "/media/posts/3/responsive/444753235_970463374822406_3237759695782418230_n-xs.jpg",
+        "type": "file",
+        "md5": "3ddb3796f1b65549ba2ede9c3e5b9db9"
+    },
+    {
+        "path": "/media/posts/3/responsive/473027310_516782941419266_8212104339670289026_n-2xl.jpg",
+        "type": "file",
+        "md5": "10ad4ec7889e7e77e7863013fda6d448"
+    },
+    {
+        "path": "/media/posts/3/responsive/473027310_516782941419266_8212104339670289026_n-lg.jpg",
+        "type": "file",
+        "md5": "36ac634f76f2354e4b42747c3332dff7"
+    },
+    {
+        "path": "/media/posts/3/responsive/473027310_516782941419266_8212104339670289026_n-md.jpg",
+        "type": "file",
+        "md5": "cd0e257434a0d6877d44a227560b4f34"
+    },
+    {
+        "path": "/media/posts/3/responsive/473027310_516782941419266_8212104339670289026_n-sm.jpg",
+        "type": "file",
+        "md5": "b0234d8ee12e69e42c285e8db9242a72"
+    },
+    {
+        "path": "/media/posts/3/responsive/473027310_516782941419266_8212104339670289026_n-xl.jpg",
+        "type": "file",
+        "md5": "f5e436b326c6155758753962eccff8ed"
+    },
+    {
+        "path": "/media/posts/3/responsive/473027310_516782941419266_8212104339670289026_n-xs.jpg",
+        "type": "file",
+        "md5": "cb985e8257c04a09c0768f624b0d920f"
+    },
+    {
+        "path": "/media/posts/3/responsive/482696971_18481629307020505_4274159249706350613_n-2xl.jpg",
+        "type": "file",
+        "md5": "7f6dee8c5a16d2d3328189c965d349dd"
+    },
+    {
+        "path": "/media/posts/3/responsive/482696971_18481629307020505_4274159249706350613_n-lg.jpg",
+        "type": "file",
+        "md5": "7f6dee8c5a16d2d3328189c965d349dd"
+    },
+    {
+        "path": "/media/posts/3/responsive/482696971_18481629307020505_4274159249706350613_n-md.jpg",
+        "type": "file",
+        "md5": "7f6dee8c5a16d2d3328189c965d349dd"
+    },
+    {
+        "path": "/media/posts/3/responsive/482696971_18481629307020505_4274159249706350613_n-sm.jpg",
+        "type": "file",
+        "md5": "a737c4b9a8148b367436561f8c1995f2"
+    },
+    {
+        "path": "/media/posts/3/responsive/482696971_18481629307020505_4274159249706350613_n-xl.jpg",
+        "type": "file",
+        "md5": "7f6dee8c5a16d2d3328189c965d349dd"
+    },
+    {
+        "path": "/media/posts/3/responsive/482696971_18481629307020505_4274159249706350613_n-xs.jpg",
+        "type": "file",
+        "md5": "e25cf385b4bfe63d4f6508139d0ebb2b"
+    },
+    {
+        "path": "media/posts/4",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts/4/gallery",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/4/gallery/2011-thumbnail.jpg",
+        "type": "file",
+        "md5": "ef1cee0ad389d044e39906e4c2266de3"
+    },
+    {
+        "path": "/media/posts/4/gallery/2011.jpg",
+        "type": "file",
+        "md5": "43429bcf705be272fc28e356be1e41dd"
+    },
+    {
+        "path": "/media/posts/4/gallery/2012-thumbnail.jpg",
+        "type": "file",
+        "md5": "bc36c4677c0bcc0bc9c23db76b327978"
+    },
+    {
+        "path": "/media/posts/4/gallery/2012.jpg",
+        "type": "file",
+        "md5": "00781bd77a2e87546c09bcada5ad92b3"
+    },
+    {
+        "path": "/media/posts/4/gallery/2013-thumbnail.jpg",
+        "type": "file",
+        "md5": "0edea55e8ede641f9f026e55bc6b4965"
+    },
+    {
+        "path": "/media/posts/4/gallery/2013.jpg",
+        "type": "file",
+        "md5": "9cf5db7d76d5f9b64a28fe2f8934652d"
+    },
+    {
+        "path": "/media/posts/4/gallery/2014-thumbnail.jpg",
+        "type": "file",
+        "md5": "2cd187878498e6e8ed4eeba7cae130aa"
+    },
+    {
+        "path": "/media/posts/4/gallery/2014.jpg",
+        "type": "file",
+        "md5": "8d1b6643722f32a0db79865f8656dcc8"
+    },
+    {
+        "path": "/media/posts/4/gallery/2015-thumbnail.jpg",
+        "type": "file",
+        "md5": "2fe96dff37474fcef38daba723bdb605"
+    },
+    {
+        "path": "/media/posts/4/gallery/2015.jpg",
+        "type": "file",
+        "md5": "77d8bd21f151a3151fdb85e7a5572417"
+    },
+    {
+        "path": "/media/posts/4/gallery/2016-thumbnail.jpg",
+        "type": "file",
+        "md5": "30b34ed291f543d747280fb9fcfaa35b"
+    },
+    {
+        "path": "/media/posts/4/gallery/2016.jpg",
+        "type": "file",
+        "md5": "7851bac7b8e329bc3e7cdd69d581c201"
+    },
+    {
+        "path": "/media/posts/4/gallery/2017-thumbnail.jpg",
+        "type": "file",
+        "md5": "3e6b52474cee5a94156600d0a38b9885"
+    },
+    {
+        "path": "/media/posts/4/gallery/2017.jpg",
+        "type": "file",
+        "md5": "7d81ac54aa759cd7d7fbbdc8e67adf61"
+    },
+    {
+        "path": "/media/posts/4/gallery/2018-thumbnail.jpg",
+        "type": "file",
+        "md5": "30e09d1168be4d9bd4adaee6bc64171b"
+    },
+    {
+        "path": "/media/posts/4/gallery/2018.jpg",
+        "type": "file",
+        "md5": "e83685a80e927c249eecc203934fda1c"
+    },
+    {
+        "path": "/media/posts/4/gallery/2019-thumbnail.jpg",
+        "type": "file",
+        "md5": "200aa24721cb88623882662e02ff2036"
+    },
+    {
+        "path": "/media/posts/4/gallery/2019.jpg",
+        "type": "file",
+        "md5": "1d37accebc608094e77c3a66b2e4130a"
+    },
+    {
+        "path": "/media/posts/4/gallery/2020-thumbnail.jpg",
+        "type": "file",
+        "md5": "faf8aff001f4e0268a1fd5b8506fec10"
+    },
+    {
+        "path": "/media/posts/4/gallery/2020.jpg",
+        "type": "file",
+        "md5": "e7ed18dc61268d85b065b23a08b82c48"
+    },
+    {
+        "path": "/media/posts/4/gallery/2021-thumbnail.jpg",
+        "type": "file",
+        "md5": "f32a3bfcf85732a264f9ac8ba7e9ffc8"
+    },
+    {
+        "path": "/media/posts/4/gallery/2021.jpg",
+        "type": "file",
+        "md5": "682a6b3ed04aad400efedd899ecba4d5"
+    },
+    {
+        "path": "/media/posts/4/gallery/2022-thumbnail.jpg",
+        "type": "file",
+        "md5": "109078c9157962a4acecbe3ad64e3167"
+    },
+    {
+        "path": "/media/posts/4/gallery/2022.jpg",
+        "type": "file",
+        "md5": "51f3cebcd8700fa33e8aa1dff829183d"
+    },
+    {
+        "path": "/media/posts/4/gallery/2023-thumbnail.jpg",
+        "type": "file",
+        "md5": "3a12716ab219f885ee58ec643e527f40"
+    },
+    {
+        "path": "/media/posts/4/gallery/2023.jpg",
+        "type": "file",
+        "md5": "cac95989173996338a6b0a9e794b9672"
+    },
+    {
+        "path": "/media/posts/4/gallery/2024-thumbnail.jpg",
+        "type": "file",
+        "md5": "493371992b8b7a52ce5415d4c6239383"
+    },
+    {
+        "path": "/media/posts/4/gallery/2024.jpg",
+        "type": "file",
+        "md5": "8678221ad3a726b363c0c20dacb7b5ac"
+    },
+    {
+        "path": "/media/posts/4/gallery/254113_198309760214693_100001070111142_519723_7072196_n-thumbnail.jpg",
+        "type": "file",
+        "md5": "4c9c4619a14d07969618b2f52e2b4825"
+    },
+    {
+        "path": "/media/posts/4/gallery/254113_198309760214693_100001070111142_519723_7072196_n.jpg",
+        "type": "file",
+        "md5": "72389e4fbf6fc78aa286a8786d14c85f"
+    },
+    {
+        "path": "/media/posts/4/gallery/254583_198311670214502_100001070111142_519775_2681226_n-thumbnail.jpg",
+        "type": "file",
+        "md5": "cafa69a782896e18b461eca1240cc24b"
+    },
+    {
+        "path": "/media/posts/4/gallery/254583_198311670214502_100001070111142_519775_2681226_n.jpg",
+        "type": "file",
+        "md5": "294f1c63f35cdc15fd94e19d3712ad3b"
+    },
+    {
+        "path": "/media/posts/4/gallery/cartell-FM-2025-thumbnail.jpg",
+        "type": "file",
+        "md5": "eecb3ded1acc39ce8edf4bb99c608ac6"
+    },
+    {
+        "path": "/media/posts/4/gallery/cartell-FM-2025.jpg",
+        "type": "file",
+        "md5": "c70306bfa2ba05824bacb1268c25f8cb"
+    },
+    {
+        "path": "/media/posts/4/llampsitrons2.jpg",
+        "type": "file",
+        "md5": "0c68c8ca6d67d29decd88417c3f1f186"
+    },
+    {
+        "path": "media/posts/4/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/4/responsive/llampsitrons2-2xl.jpg",
+        "type": "file",
+        "md5": "a843926389eac95476b0ac29df4271a6"
+    },
+    {
+        "path": "/media/posts/4/responsive/llampsitrons2-lg.jpg",
+        "type": "file",
+        "md5": "a843926389eac95476b0ac29df4271a6"
+    },
+    {
+        "path": "/media/posts/4/responsive/llampsitrons2-md.jpg",
+        "type": "file",
+        "md5": "a843926389eac95476b0ac29df4271a6"
+    },
+    {
+        "path": "/media/posts/4/responsive/llampsitrons2-sm.jpg",
+        "type": "file",
+        "md5": "cae96f877adc94f18e97be9f72857794"
+    },
+    {
+        "path": "/media/posts/4/responsive/llampsitrons2-xl.jpg",
+        "type": "file",
+        "md5": "a843926389eac95476b0ac29df4271a6"
+    },
+    {
+        "path": "/media/posts/4/responsive/llampsitrons2-xs.jpg",
+        "type": "file",
+        "md5": "53273b074e4d85bc190e05f21c2f2e6d"
+    },
+    {
+        "path": "/media/posts/4/responsive/weekand-2xl.jpg",
+        "type": "file",
+        "md5": "13a678ea35a1fac7665c201d24ecc91e"
+    },
+    {
+        "path": "/media/posts/4/responsive/weekand-lg.jpg",
+        "type": "file",
+        "md5": "13a678ea35a1fac7665c201d24ecc91e"
+    },
+    {
+        "path": "/media/posts/4/responsive/weekand-md.jpg",
+        "type": "file",
+        "md5": "13a678ea35a1fac7665c201d24ecc91e"
+    },
+    {
+        "path": "/media/posts/4/responsive/weekand-sm.jpg",
+        "type": "file",
+        "md5": "7e149f5b028d7d906e0e5b71c7edcdce"
+    },
+    {
+        "path": "/media/posts/4/responsive/weekand-xl.jpg",
+        "type": "file",
+        "md5": "13a678ea35a1fac7665c201d24ecc91e"
+    },
+    {
+        "path": "/media/posts/4/responsive/weekand-xs.jpg",
+        "type": "file",
+        "md5": "effe7226d42b1dd607e34a55474935c1"
+    },
+    {
+        "path": "/media/posts/4/weekand.jpg",
+        "type": "file",
+        "md5": "b944ccf1283415c4e45e21cf24ef96b9"
+    },
+    {
+        "path": "media/posts/7",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/7/CARTELL-2.jpg",
+        "type": "file",
+        "md5": "c70306bfa2ba05824bacb1268c25f8cb"
+    },
+    {
+        "path": "media/posts/7/gallery",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/7/gallery/CARTELL-2.jpg",
+        "type": "file",
+        "md5": "c70306bfa2ba05824bacb1268c25f8cb"
+    },
+    {
+        "path": "/media/posts/7/gallery/PUNTUABLES-2.png",
+        "type": "file",
+        "md5": "0fac9f185e68850ce3a0d32561a6f073"
+    },
+    {
+        "path": "/media/posts/7/PUNTUABLES-2.png",
+        "type": "file",
+        "md5": "0fac9f185e68850ce3a0d32561a6f073"
+    },
+    {
+        "path": "media/posts/7/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/7/responsive/CARTELL-2-2xl.jpg",
+        "type": "file",
+        "md5": "4f3de892d25c3e887fe196b4988a5d18"
+    },
+    {
+        "path": "/media/posts/7/responsive/CARTELL-2-lg.jpg",
+        "type": "file",
+        "md5": "935aeae696393866918b07bc3a3a4935"
+    },
+    {
+        "path": "/media/posts/7/responsive/CARTELL-2-md.jpg",
+        "type": "file",
+        "md5": "c1c8909370e7a56ddc1070b9e5817070"
+    },
+    {
+        "path": "/media/posts/7/responsive/CARTELL-2-sm.jpg",
+        "type": "file",
+        "md5": "a8eed3890d27ae7b39470ffc933d42ee"
+    },
+    {
+        "path": "/media/posts/7/responsive/CARTELL-2-xl.jpg",
+        "type": "file",
+        "md5": "4f3de892d25c3e887fe196b4988a5d18"
+    },
+    {
+        "path": "/media/posts/7/responsive/CARTELL-2-xs.jpg",
+        "type": "file",
+        "md5": "997b067db8b27cddca6b1898dc64890f"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-2xl.png",
+        "type": "file",
+        "md5": "84df0481c3f16b69453280612200b08d"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-lg.png",
+        "type": "file",
+        "md5": "e3f7d7ffd1e1128d53076be2535151cf"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-md.png",
+        "type": "file",
+        "md5": "08d633d3fba66b6a512b90fb61058da9"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-sm.png",
+        "type": "file",
+        "md5": "18cb4f0b2cd586500192d9725ad1cf7c"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-xl.png",
+        "type": "file",
+        "md5": "84df0481c3f16b69453280612200b08d"
+    },
+    {
+        "path": "/media/posts/7/responsive/PUNTUABLES-2-xs.png",
+        "type": "file",
+        "md5": "54ecb62db9ebff8d8f51a236e3346ee1"
+    },
+    {
+        "path": "media/website",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/website/LOGOTIP-removebg-preview.png",
+        "type": "file",
+        "md5": "5ced7c7f6d22c4e23f191cacb89e7a2c"
+    },
+    {
+        "path": "/media/website/prova-fons3.svg",
+        "type": "file",
+        "md5": "c6a9794f3f268308a6a8502b9dfab003"
+    },
+    {
+        "path": "media/website/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/website/responsive/LOGOTIP-removebg-preview-2xl.png",
+        "type": "file",
+        "md5": "7c612f388d44b204c54aeba1ee25d9c6"
+    },
+    {
+        "path": "/media/website/responsive/LOGOTIP-removebg-preview-lg.png",
+        "type": "file",
+        "md5": "7c612f388d44b204c54aeba1ee25d9c6"
+    },
+    {
+        "path": "/media/website/responsive/LOGOTIP-removebg-preview-md.png",
+        "type": "file",
+        "md5": "7c612f388d44b204c54aeba1ee25d9c6"
+    },
+    {
+        "path": "/media/website/responsive/LOGOTIP-removebg-preview-sm.png",
+        "type": "file",
+        "md5": "35d9edd60e49fcec5906e694713046e0"
+    },
+    {
+        "path": "/media/website/responsive/LOGOTIP-removebg-preview-xl.png",
+        "type": "file",
+        "md5": "7c612f388d44b204c54aeba1ee25d9c6"
+    },
+    {
+        "path": "/media/website/responsive/LOGOTIP-removebg-preview-xs.png",
+        "type": "file",
+        "md5": "8af391efc78bc409457e8ba68c09db3b"
+    },
+    {
+        "path": "Normes_cursa_carretons_2025.pdf",
+        "type": "file",
+        "md5": "6c9a17035bc6324354786bf6e6aa267a"
+    },
+    {
+        "path": "Normes_Joc_del_rotllo_2025.pdf",
+        "type": "file",
+        "md5": "0e2537eb9e3ea5642b04dd0f8563721d"
+    },
+    {
+        "path": "PUNTUABLES.png",
+        "type": "file",
+        "md5": "0fac9f185e68850ce3a0d32561a6f073"
+    },
+    {
+        "path": "qui-som",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/qui-som/index.html",
+        "type": "file",
+        "md5": "bdf0c452ecda7e396d7d92e70a69132b"
+    },
+    {
+        "path": "robots.txt",
+        "type": "file",
+        "md5": "9bd9ad9e6f4842fd465fcdbca7450dec"
+    },
+    {
+        "path": "sitemap.xml",
+        "type": "file",
+        "md5": "0b9cdcac058caade94e6d658f6b42bf6"
+    },
+    {
+        "path": "sitemap.xsl",
+        "type": "file",
+        "md5": "03c2f9a7fdcc46ff05c435907614a0b8"
+    },
+    {
+        "path": "tags",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tags/index.html",
+        "type": "file",
+        "md5": "fad2856c97505eecdbeb5501da151b43"
+    }
+]

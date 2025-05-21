@@ -222,12 +222,12 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "057cb1ef1828548c020e47d8290e8e31"
+        "md5": "43992d2d7f87d2895951bf216fed7a43"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "2bb4b61603bab8594bd731023d80c7c5"
+        "md5": "becf9c6abea65b9d68577f4a30fc699e"
     },
     {
         "path": "festa-major-2025",
@@ -237,7 +237,7 @@
     {
         "path": "/festa-major-2025/index.html",
         "type": "file",
-        "md5": "66fda8d529427024f6d7f39874a4f5f7"
+        "md5": "edc197e7b842c9a577d1959ae682926c"
     },
     {
         "path": "festa-major-de-la-creu-alta",
@@ -965,6 +965,11 @@
         "md5": "0e2537eb9e3ea5642b04dd0f8563721d"
     },
     {
+        "path": "ProgramaOficialFMLCA2025.pdf",
+        "type": "file",
+        "md5": "d14ebabc82a440a886719b9e3a1e1b66"
+    },
+    {
         "path": "PUNTUABLES.png",
         "type": "file",
         "md5": "0fac9f185e68850ce3a0d32561a6f073"
@@ -987,7 +992,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "e92838811be431dc61ab0391e099506d"
+        "md5": "3f33b0d77cc2b649252464086dbfdd56"
     },
     {
         "path": "sitemap.xsl",

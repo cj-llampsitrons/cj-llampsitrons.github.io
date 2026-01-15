@@ -217,7 +217,7 @@
     {
         "path": "/contacte/index.html",
         "type": "file",
-        "md5": "4e996e6b11b1f1d634af3e47482154ba"
+        "md5": "23b625a7b74bf4d5442354a691321822"
     },
     {
         "path": "feed.json",
@@ -992,7 +992,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "7e582438f38249e68847f6973daf2e88"
+        "md5": "477aa8acc1e079473b7c28318092adb3"
     },
     {
         "path": "sitemap.xsl",

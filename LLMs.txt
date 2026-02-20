@@ -1,0 +1,6 @@
+LLM: *
+Path: /*
+$trainingAllowed: true
+$chatAllowed: true
+$embedded: allowed
+$responseLength: unlimited

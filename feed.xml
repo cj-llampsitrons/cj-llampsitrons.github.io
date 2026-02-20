@@ -3,7 +3,7 @@
     <title>cj.llampsitrons.github.io</title>
     <link href="https://lacreualtallampsitrons.cat/feed.xml" rel="self" />
     <link href="https://lacreualtallampsitrons.cat" />
-    <updated>2025-07-04T09:44:19+02:00</updated>
+    <updated>2026-02-20T11:08:56+01:00</updated>
     <author>
         <name>Llamps i Trons</name>
     </author>
@@ -20,12 +20,55 @@
         <updated>2025-04-22T14:14:03+02:00</updated>
             <summary type="html">
                 <![CDATA[
-                    Ves escalfant motors que la Festa Major de La Creu Alta està a tocar!✨ Serà any Tro o any Llamp? Us hi esperem&hellip;
+                    { "@context": "https://schema.org", "@type": "Festival", "@id": "https://lacreualtallampsitrons.cat/festa-major-2025/", "name": "Festa Major de la Creu Alta 2025", "alternateName": "Festa Major Creu Alta", "description": "Festa Major&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Ves escalfant motors que la Festa Major de La Creu Alta està a tocar!✨<br>Serà any Tro o any Llamp? <br>Us hi esperem a totes per lluitar pel vostre equip i que tremoli el barri un any més!💛💙🌩️</p>
+                <p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Festival",
+  "@id": "https://lacreualtallampsitrons.cat/festa-major-2025/",
+  "name": "Festa Major de la Creu Alta 2025",
+  "alternateName": "Festa Major Creu Alta",
+  "description": "Festa Major del barri de la Creu Alta de Sabadell amb activitats culturals, concerts, cercaviles i actes populars organitzats per les entitats.",
+  "inLanguage": "ca",
+  "url": "https://lacreualtallampsitrons.cat/festa-major-2025/",
+  "startDate": "2025-06-06T18:00:00+02:00",
+  "endDate": "2025-06-08T23:59:00+02:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "image": [
+    "https://lacreualtallampsitrons.cat/CARTELL.jpg",
+    "https://lacreualtallampsitrons.cat/PUNTUABLES.png"
+  ],
+  "location": {
+    "@type": "Place",
+    "name": "Barri de la Creu Alta",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sabadell",
+      "addressRegion": "Catalunya",
+      "addressCountry": "ES"
+    }
+  },
+  "organizer": {
+    "@type": "NGO",
+    "@id": "https://lacreualtallampsitrons.cat/",
+    "name": "Llamps i Trons",
+    "url": "https://lacreualtallampsitrons.cat/",
+    "sameAs": [
+      "https://instagram.com/llampsitrons",
+      "https://twitter.com/llampsitrons"
+    ]
+  },
+  "mainEntityOfPage": "https://patrimonifestiu.cultura.gencat.cat/Festa-Major-de-la-Creu-Alta-Sabadell"
+}
+</script>
+</p>
+<p>Ves escalfant motors que la Festa Major de La Creu Alta està a tocar!✨<br>Serà any Tro o any Llamp? <br>Us hi esperem a totes per lluitar pel vostre equip i que tremoli el barri un any més!💛💙🌩️</p>
 <table style="border-collapse: collapse; width: 100%;" border="1">
 <tbody>
 <tr>

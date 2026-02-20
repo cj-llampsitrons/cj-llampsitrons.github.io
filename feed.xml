@@ -3,7 +3,7 @@
     <title>cj.llampsitrons.github.io</title>
     <link href="https://lacreualtallampsitrons.cat/feed.xml" rel="self" />
     <link href="https://lacreualtallampsitrons.cat" />
-    <updated>2026-02-20T11:12:02+01:00</updated>
+    <updated>2026-02-20T11:17:33+01:00</updated>
     <author>
         <name>Llamps i Trons</name>
     </author>
@@ -20,7 +20,7 @@
         <updated>2025-04-22T14:14:03+02:00</updated>
             <summary type="html">
                 <![CDATA[
-                    { "@context": "https://schema.org", "@type": "Festival", "@id": "https://lacreualtallampsitrons.cat/festa-major-2025/", "name": "Festa Major de la Creu Alta 2025", "alternateName": "Festa Major Creu Alta", "description": "Festa Major&hellip;
+                    { "@context": "https://schema.org", "@type": "Event", "name": "Festa Major de la Creu Alta 2025", "alternateName": "Festa Major Creu Alta", "description": "Festa Major del barri&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -29,8 +29,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Festival",
-  "@id": "https://lacreualtallampsitrons.cat/festa-major-2025/",
+  "@type": "Event",
   "name": "Festa Major de la Creu Alta 2025",
   "alternateName": "Festa Major Creu Alta",
   "description": "Festa Major del barri de la Creu Alta de Sabadell amb activitats culturals, concerts, cercaviles i actes populars organitzats per les entitats.",
@@ -39,7 +38,6 @@
   "startDate": "2025-06-06T18:00:00+02:00",
   "endDate": "2025-06-08T23:59:00+02:00",
   "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "image": [
     "https://lacreualtallampsitrons.cat/CARTELL.jpg",
     "https://lacreualtallampsitrons.cat/PUNTUABLES.png"
@@ -56,7 +54,6 @@
   },
   "organizer": {
     "@type": "NGO",
-    "@id": "https://lacreualtallampsitrons.cat/",
     "name": "Llamps i Trons",
     "url": "https://lacreualtallampsitrons.cat/",
     "sameAs": [

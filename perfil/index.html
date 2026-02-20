@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://lacreualtallampsitrons.cat/media/website/LOGOTIP-removebg-preview.png" type="image/png">
+    <title>Llamps i Trons | Xarxes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .profile-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 300px;
+        }
+        .profile-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+        }
+        .buttons a {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .instagram { background: #E1306C; }
+        .web { background: #555; }
+        .fm { background: #1DB954; }
+        .youtube { background: #FF0000; }
+        .twitter { background: #1DA1F2; }
+        .any { background: #7375CF; }
+        .buttons a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="https://lacreualtallampsitrons.cat/media/website/LOGOTIP-removebg-preview.png" alt="Foto de perfil">
+        <h1>Llamps i Trons</h1>
+	<br>
+        <div class="buttons">
+            <a href="https://lacreualtallampsitrons.cat/festa-major-2025/" target="_blank" class="any">Programa de FM 2025</a>
+            <a href="https://lacreualtallampsitrons.cat/marcador" target="_blank" class="fm">Marcador de FM</a>
+<!--            <a href="https://www.youtube.com/" target="_blank" class="youtube">YouTube</a> -->
+            <a href="https://lacreualtallampsitrons.cat" target="_blank" class="web">Web</a>
+            <a href="https://www.instagram.com/llampsitrons" target="_blank" class="instagram">Instagram</a>
+            <a href="https://twitter.com/llampsitrons" target="_blank" class="twitter">Twitter</a>
+
+        </div>
+    </div>
+<script>
+    // Obtenim l'any actual
+    const anyActual = new Date().getFullYear();
+
+    // Seleccionem tots els elements amb la classe "any"
+    const elements = document.querySelectorAll('.any');
+
+    // Recorrem cada element i canviem "2025" per l'any actual
+    elements.forEach(el => {
+        // Canvia el text visible
+        el.textContent = el.textContent.replace(/2025/g, anyActual);
+
+        // Canvia l'enllaç si conté "2025"
+        el.href = el.href.replace(/2025/g, anyActual);
+    });
+</script>
+</body>
+</html>

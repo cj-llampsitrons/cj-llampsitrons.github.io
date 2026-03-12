@@ -16,56 +16,78 @@
 <input id="password" type="password"><br><br>
 
 <button onclick="encrypt()">Encrypt</button>
+<button onclick="downloadToken()">Download ght.txt</button>
 
 <h3>Encrypted Token</h3>
 <textarea id="output" style="width:500px;height:120px"></textarea>
 
 <script>
 
+let lastEncrypted=""; // guardem l'últim encriptat per descarregar
+
 async function encrypt(){
 
-const token=document.getElementById("token").value;
-const password=document.getElementById("password").value;
+    const token=document.getElementById("token").value;
+    const password=document.getElementById("password").value;
 
-const enc=new TextEncoder();
+    const enc=new TextEncoder();
 
-const keyMaterial=await crypto.subtle.importKey(
-"raw",
-enc.encode(password),
-"PBKDF2",
-false,
-["deriveKey"]
-);
+    const keyMaterial=await crypto.subtle.importKey(
+        "raw",
+        enc.encode(password),
+        "PBKDF2",
+        false,
+        ["deriveKey"]
+    );
 
-const key=await crypto.subtle.deriveKey(
-{
-name:"PBKDF2",
-salt:enc.encode("github-editor"),
-iterations:100000,
-hash:"SHA-256"
-},
-keyMaterial,
-{name:"AES-GCM",length:256},
-false,
-["encrypt"]
-);
+    const key=await crypto.subtle.deriveKey(
+        {
+            name:"PBKDF2",
+            salt:enc.encode("github-editor"),
+            iterations:100000,
+            hash:"SHA-256"
+        },
+        keyMaterial,
+        {name:"AES-GCM",length:256},
+        false,
+        ["encrypt"]
+    );
 
-const iv=crypto.getRandomValues(new Uint8Array(12));
+    const iv=crypto.getRandomValues(new Uint8Array(12));
 
-const encrypted=await crypto.subtle.encrypt(
-{name:"AES-GCM",iv},
-key,
-enc.encode(token)
-);
+    const encrypted=await crypto.subtle.encrypt(
+        {name:"AES-GCM",iv},
+        key,
+        enc.encode(token)
+    );
 
-const data={
-iv:Array.from(iv),
-data:Array.from(new Uint8Array(encrypted))
-};
+    const data={
+        iv:Array.from(iv),
+        data:Array.from(new Uint8Array(encrypted))
+    };
 
-document.getElementById("output").value=
-btoa(JSON.stringify(data));
+    const encoded=btoa(JSON.stringify(data));
 
+    document.getElementById("output").value = encoded;
+    lastEncrypted = encoded; // guardem per descarregar
+
+}
+
+// Funció per descarregar l’encriptat com a fitxer ght.txt
+function downloadToken(){
+    if(!lastEncrypted){
+        alert("Primer encripta un token!");
+        return;
+    }
+    const blob = new Blob([lastEncrypted], {type: "text/plain"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "ght.txt";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
 }
 
 </script>

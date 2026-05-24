@@ -374,7 +374,7 @@ function updateStatus(text){
 
 async function loadEncryptedToken(){
 
-    const res = await fetch("https://lacreualtallampsitrons.cat/ght.txt");
+    const res = await fetch("/ght.txt");
 
     if(!res.ok){
         throw new Error("No s'ha pogut llegir ght.txt");

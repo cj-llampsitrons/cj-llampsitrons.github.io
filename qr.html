@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Generador de QR</title>
+
+  <link rel="icon" type="image/png" href="https://mtorra.eu/media/website/favicon-2.png">
+
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --card-hover: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --border: rgba(255,255,255,0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 1.5rem;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, sans-serif;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: auto;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .icon-wrapper {
+      width: 74px;
+      height: 74px;
+      margin: 0 auto 1rem;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(56,189,248,0.08);
+      border: 1px solid rgba(56,189,248,0.15);
+    }
+
+    .icon {
+      width: 34px;
+      height: 34px;
+      color: var(--accent);
+      display: block;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin-top: .7rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .section {
+      margin-top: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: .7rem;
+      font-size: .95rem;
+      color: var(--muted);
+    }
+
+    input,
+    button {
+      width: 100%;
+      border: none;
+      outline: none;
+      border-radius: 14px;
+      font-size: 1rem;
+      transition: .2s ease;
+    }
+
+    input {
+      background: #0b1220;
+      color: var(--text);
+      padding: 1rem;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    input:focus {
+      border-color: rgba(56,189,248,0.4);
+    }
+
+    input[type="color"] {
+      height: 58px;
+      padding: .4rem;
+      cursor: pointer;
+    }
+
+    input[type="file"] {
+      padding: .8rem;
+      cursor: pointer;
+    }
+
+    button {
+      background: var(--accent);
+      color: #0f172a;
+      padding: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .6rem;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+    }
+
+    .qr-wrapper {
+      margin-top: 2rem;
+      background: #0b1220;
+      border-radius: 20px;
+      padding: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+    }
+
+    #qr-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      max-width: 300px;
+      height: auto !important;
+      border-radius: 16px;
+      background: white;
+      padding: .5rem;
+    }
+
+    .footer {
+      margin-top: 1rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: .85rem;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 1rem;
+      }
+
+      .card {
+        padding: 1.4rem;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .qr-wrapper {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+
+      <div class="header">
+        <div class="icon-wrapper">
+          <i data-feather="grid" class="icon"></i>
+        </div>
+
+        <h1>Generador de QR</h1>
+
+        <p class="subtitle">
+          Genera codis QR personalitzats amb colors i logotips incrustats.
+        </p>
+      </div>
+
+      <div class="section">
+        <label>Text o enllaç</label>
+
+        <input
+          id="text"
+          placeholder="Enllaç, email, telèfon, text..."
+        />
+      </div>
+
+      <div class="section">
+        <label>Color del QR</label>
+
+        <input
+          type="color"
+          id="color"
+          value="#000000"
+        />
+      </div>
+
+      <div class="section">
+        <label>Imatge incrustada (centre del QR)</label>
+
+        <input
+          type="file"
+          id="logo"
+          accept="image/*"
+        />
+      </div>
+
+      <div class="section">
+        <button onclick="downloadQR()">
+          <i data-feather="download"></i>
+          Descarregar QR en PNG
+        </button>
+      </div>
+
+      <div class="qr-wrapper">
+        <div id="qr-container"></div>
+      </div>
+
+      <div class="footer">
+        Compatible amb enllaços, emails, telèfons i text
+      </div>
+
+    </div>
+  </div>
+
+  <!-- QR Code Styling Library -->
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.6.0/lib/qr-code-styling.js"></script>
+
+  <script>
+    feather.replace();
+
+    let logoData = null;
+
+    const isMobile = window.innerWidth < 400;
+
+    const qrCode = new QRCodeStyling({
+      width: isMobile ? 300 : 750,
+      height: isMobile ? 300 : 750,
+      data: "QR",
+      dotsOptions: {
+        color: "#000000",
+        type: "rounded"
+      },
+      backgroundOptions: {
+        color: "#ffffff"
+      },
+      imageOptions: {
+        crossOrigin: "anonymous",
+        margin: 5
+      }
+    });
+
+    qrCode.append(document.getElementById("qr-container"));
+
+    // Update QR text
+    document.getElementById("text").addEventListener("input", (e) => {
+      qrCode.update({
+        data: e.target.value || " "
+      });
+    });
+
+    // Update color
+    document.getElementById("color").addEventListener("input", (e) => {
+      qrCode.update({
+        dotsOptions: {
+          color: e.target.value
+        }
+      });
+    });
+
+    // Upload logo
+    document.getElementById("logo").addEventListener("change", (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+
+      reader.onload = function(event) {
+        logoData = event.target.result;
+
+        qrCode.update({
+          image: logoData
+        });
+      };
+
+      reader.readAsDataURL(file);
+    });
+
+    // Download QR
+    function downloadQR() {
+      qrCode.download({
+        name: "qr-code",
+        extension: "png"
+      });
+    }
+  </script>
+
+</body>
+</html>

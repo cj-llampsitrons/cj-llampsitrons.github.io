@@ -265,10 +265,13 @@ select:focus{
         <div>
             <h1>Editor Marcador FM</h1>
             <div class="subtitle">
-                Editor del JSON de les proves amb GitHub API. <br><br><i><b>NOTA:</b> Cal configurar abans el document ght.txt correctament amb <a href="/encriptador.html" target="_Blank">l'encriptador</a>.</i>
+                Editor del JSON de les proves amb GitHub API. <br><br><i><b>NOTA:</b> Per poder carregar la informació i editar el marcador cal tenir un token de github vàlid en un fitxer .txt (segurament anomenat gh_token.txt).</i>
             </div>
         </div>
     </div>
+
+    <!-- Hidden file input for token -->
+    <input type="file" id="tokenFile" accept=".txt" style="display:none" />
 
     <div class="card">
 
@@ -359,79 +362,51 @@ const statusText = document.querySelector("#statusText");
 const dirtyText = document.querySelector("#dirtyText");
 
 function setDirty(value){
-
     dirty = value;
-
-    dirtyText.textContent = dirty
-        ? "Canvis pendents"
-        : "Tot guardat";
-
+    dirtyText.textContent = dirty ? "Canvis pendents" : "Tot guardat";
 }
 
 function updateStatus(text){
     statusText.textContent = text;
 }
 
-async function loadEncryptedToken(){
-
-    const res = await fetch("/ght.txt");
-
-    if(!res.ok){
-        throw new Error("No s'ha pogut llegir ght.txt");
-    }
-
-    return res.text();
-
-}
-
+/**
+ * NEW: token is now loaded from a .txt file upload (no encryption, no password)
+ */
 async function unlockToken(){
 
     if(token) return;
 
-    const ENCRYPTED_TOKEN = await loadEncryptedToken();
+    return new Promise((resolve, reject) => {
 
-    const stored = JSON.parse(atob(ENCRYPTED_TOKEN));
+        const input = document.getElementById("tokenFile");
+        input.value = "";
 
-    const password = prompt("Password");
+        input.onchange = async () => {
+            try{
+                const file = input.files[0];
+                if(!file){
+                    reject(new Error("No s'ha seleccionat cap fitxer"));
+                    return;
+                }
 
-    const enc = new TextEncoder();
-    const dec = new TextDecoder();
+                const text = await file.text();
+                token = text.trim();
 
-    const keyMaterial = await crypto.subtle.importKey(
-        "raw",
-        enc.encode(password),
-        "PBKDF2",
-        false,
-        ["deriveKey"]
-    );
+                if(!token){
+                    reject(new Error("El fitxer està buit"));
+                    return;
+                }
 
-    const key = await crypto.subtle.deriveKey(
-        {
-            name: "PBKDF2",
-            salt: enc.encode("github-editor"),
-            iterations: 100000,
-            hash: "SHA-256"
-        },
-        keyMaterial,
-        {
-            name: "AES-GCM",
-            length: 256
-        },
-        false,
-        ["decrypt"]
-    );
+                resolve();
 
-    const decrypted = await crypto.subtle.decrypt(
-        {
-            name: "AES-GCM",
-            iv: new Uint8Array(stored.iv)
-        },
-        key,
-        new Uint8Array(stored.data)
-    );
+            }catch(err){
+                reject(err);
+            }
+        };
 
-    token = dec.decode(decrypted);
-
+        input.click();
+    });
 }
 
 function decodeBase64UTF8(str){
@@ -503,10 +478,8 @@ async function fetchJSON(){
 }
 
 function render(){
-
     renderDesktop();
     renderMobile();
-
 }
 
 function renderDesktop(){
@@ -519,38 +492,20 @@ function renderDesktop(){
 
         tr.innerHTML = `
 
+            <td>${index + 1}</td>
+
             <td>
-                ${index + 1}
+                <input data-field="title" data-index="${index}" value="${escapeHtml(el.title)}">
             </td>
 
             <td>
-                <input
-                    data-field="title"
-                    data-index="${index}"
-                    value="${escapeHtml(el.title)}"
-                >
+                <input type="number" min="0" data-field="points" data-index="${index}" value="${el.points}">
             </td>
 
             <td>
-                <input
-                    type="number"
-                    min="0"
-                    data-field="points"
-                    data-index="${index}"
-                    value="${el.points}"
-                >
-            </td>
-
-            <td>
-                <select
-                    data-field="winner"
-                    data-index="${index}"
-                >
+                <select data-field="winner" data-index="${index}">
                     ${winners.map(w=>`
-                        <option
-                            value="${w}"
-                            ${w===el.winner ? "selected" : ""}
-                        >
+                        <option value="${w}" ${w===el.winner ? "selected" : ""}>
                             ${w}
                         </option>
                     `).join("")}
@@ -560,32 +515,15 @@ function renderDesktop(){
             <td>
                 <div class="move-buttons">
 
-                    <button
-                        class="btn-secondary"
-                        onclick="moveRow(${index},-1)"
-                        ${index===0 ? "disabled" : ""}
-                    >
-                        ↑
-                    </button>
+                    <button class="btn-secondary" onclick="moveRow(${index},-1)" ${index===0 ? "disabled" : ""}>↑</button>
 
-                    <button
-                        class="btn-secondary"
-                        onclick="moveRow(${index},1)"
-                        ${index===elements.length-1 ? "disabled" : ""}
-                    >
-                        ↓
-                    </button>
+                    <button class="btn-secondary" onclick="moveRow(${index},1)" ${index===elements.length-1 ? "disabled" : ""}>↓</button>
 
                 </div>
             </td>
 
             <td>
-                <button
-                    class="btn-danger"
-                    onclick="removeRow(${index})"
-                >
-                    Esborrar
-                </button>
+                <button class="btn-danger" onclick="removeRow(${index})">Esborrar</button>
             </td>
         `;
 
@@ -602,41 +540,19 @@ function renderMobile(){
     elements.forEach((el,index)=>{
 
         const card = document.createElement("div");
-
         card.className = "mobile-card";
 
         card.innerHTML = `
 
             <div class="card-top">
 
-                <strong>
-                    #${index + 1}
-                </strong>
+                <strong>#${index + 1}</strong>
 
                 <div class="mobile-actions">
 
-                    <button
-                        class="btn-secondary"
-                        onclick="moveRow(${index},-1)"
-                        ${index===0 ? "disabled" : ""}
-                    >
-                        ↑
-                    </button>
-
-                    <button
-                        class="btn-secondary"
-                        onclick="moveRow(${index},1)"
-                        ${index===elements.length-1 ? "disabled" : ""}
-                    >
-                        ↓
-                    </button>
-
-                    <button
-                        class="btn-danger"
-                        onclick="removeRow(${index})"
-                    >
-                        Eliminar
-                    </button>
+                    <button class="btn-secondary" onclick="moveRow(${index},-1)" ${index===0 ? "disabled" : ""}>↑</button>
+                    <button class="btn-secondary" onclick="moveRow(${index},1)" ${index===elements.length-1 ? "disabled" : ""}>↓</button>
+                    <button class="btn-danger" onclick="removeRow(${index})">Eliminar</button>
 
                 </div>
 
@@ -645,51 +561,24 @@ function renderMobile(){
             <div class="mobile-grid">
 
                 <div class="field">
-
                     <label>Títol</label>
-
-                    <input
-                        data-field="title"
-                        data-index="${index}"
-                        value="${escapeHtml(el.title)}"
-                    >
-
+                    <input data-field="title" data-index="${index}" value="${escapeHtml(el.title)}">
                 </div>
 
                 <div class="field">
-
                     <label>Punts</label>
-
-                    <input
-                        type="number"
-                        min="0"
-                        data-field="points"
-                        data-index="${index}"
-                        value="${el.points}"
-                    >
-
+                    <input type="number" min="0" data-field="points" data-index="${index}" value="${el.points}">
                 </div>
 
                 <div class="field">
-
                     <label>Guanyador</label>
-
-                    <select
-                        data-field="winner"
-                        data-index="${index}"
-                    >
-
+                    <select data-field="winner" data-index="${index}">
                         ${winners.map(w=>`
-                            <option
-                                value="${w}"
-                                ${w===el.winner ? "selected" : ""}
-                            >
+                            <option value="${w}" ${w===el.winner ? "selected" : ""}>
                                 ${w}
                             </option>
                         `).join("")}
-
                     </select>
-
                 </div>
 
             </div>
@@ -710,7 +599,6 @@ function addRow(){
     });
 
     render();
-
     setDirty(true);
 
 }
@@ -720,7 +608,6 @@ function removeRow(index){
     elements.splice(index,1);
 
     render();
-
     setDirty(true);
 
 }
@@ -729,32 +616,20 @@ function moveRow(index,direction){
 
     const newIndex = index + direction;
 
-    if(
-        newIndex < 0 ||
-        newIndex >= elements.length
-    ){
+    if(newIndex < 0 || newIndex >= elements.length){
         return;
     }
 
-    [
-        elements[index],
-        elements[newIndex]
-    ] = [
-        elements[newIndex],
-        elements[index]
-    ];
+    [elements[index], elements[newIndex]] = [elements[newIndex], elements[index]];
 
     render();
-
     setDirty(true);
 
 }
 
 function resetStatus(){
 
-    const ok = confirm(
-        "Reset all winners to 'Per disputar'?"
-    );
+    const ok = confirm("Reset all winners to 'Per disputar'?");
 
     if(!ok) return;
 
@@ -764,7 +639,6 @@ function resetStatus(){
     }));
 
     render();
-
     setDirty(true);
 
 }
@@ -787,15 +661,9 @@ document.addEventListener("input",(e)=>{
     if(field === undefined) return;
 
     if(field === "points"){
-
-        elements[index][field] =
-            parseInt(e.target.value) || 0;
-
+        elements[index][field] = parseInt(e.target.value) || 0;
     }else{
-
-        elements[index][field] =
-            e.target.value;
-
+        elements[index][field] = e.target.value;
     }
 
     setDirty(true);
@@ -822,32 +690,20 @@ async function saveJSON(){
         updateStatus("Guardant...");
 
         const body = {
-
             message:"Update data.json",
-
-            content:encodeBase64UTF8(
-                JSON.stringify(
-                    {elements},
-                    null,
-                    2
-                )
-            ),
-
+            content:encodeBase64UTF8(JSON.stringify({elements}, null, 2)),
             sha,
             branch
-
         };
 
         const res = await fetch(
             `https://api.github.com/repos/${repo}/contents/${path}`,
             {
                 method:"PUT",
-
                 headers:{
                     Authorization:`token ${token}`,
                     "Content-Type":"application/json"
                 },
-
                 body:JSON.stringify(body)
             }
         );
@@ -859,17 +715,12 @@ async function saveJSON(){
             sha = result.content.sha;
 
             setDirty(false);
-
             updateStatus("Guardat correctament");
 
         }else{
 
             console.error(result);
-
-            alert(
-                result.message || "Error guardant"
-            );
-
+            alert(result.message || "Error guardant");
             updateStatus("Error guardant");
 
         }
@@ -877,34 +728,22 @@ async function saveJSON(){
     }catch(err){
 
         console.error(err);
-
         updateStatus("Error guardant");
-
         alert(err.message);
 
     }
 
 }
 
-document.querySelector("#loadBtn")
-    .addEventListener("click",fetchJSON);
-
-document.querySelector("#addBtn")
-    .addEventListener("click",addRow);
-
-document.querySelector("#resetBtn")
-    .addEventListener("click",resetStatus);
-
-document.querySelector("#saveBtn")
-    .addEventListener("click",saveJSON);
+document.querySelector("#loadBtn").addEventListener("click", fetchJSON);
+document.querySelector("#addBtn").addEventListener("click", addRow);
+document.querySelector("#resetBtn").addEventListener("click", resetStatus);
+document.querySelector("#saveBtn").addEventListener("click", saveJSON);
 
 window.addEventListener("beforeunload",(e)=>{
-
     if(!dirty) return;
-
     e.preventDefault();
     e.returnValue = "";
-
 });
 
 </script>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Llamps i Trons</title>
+<link rel="shortcut icon" href="https://lacreualtallampsitrons.cat/media/website/LOGOTIP-removebg-preview.png" type="image/png">
+
+<style>
+:root {
+    --bg: #ffffff;
+    --panel: #ffffff;
+    --card: #dedede;
+    --text: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* 🔥 important per mode banner */
+}
+
+/* ===== LAYOUT GENERAL ===== */
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+.header {
+    flex: 0 0 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 2vw;
+    background: var(--panel);
+}
+
+.title {
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+/* MARCADOR */
+.scoreboard {
+    display: flex;
+    gap: 2vw;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.llampsText { color: #facc15; }
+.tronsText { color: #38bdf8; }
+
+/* ===== GRID TESSEL·LES ===== */
+.grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1vw;
+    padding: 1vw;
+}
+
+/* CARD */
+.card {
+    background: var(--card);
+    border-radius: 1vh;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.8vh;
+    overflow: hidden;
+}
+
+/* COLORS */
+.llamps { border-left: 0.8vw solid #facc15; }
+.trons { border-left: 0.8vw solid #38bdf8; }
+.empatat {
+    border-left: 0.8vw solid;
+    border-image: linear-gradient(to bottom, #facc15, #38bdf8) 1;
+}
+.anullat { border-left: 0.8vw solid red; }
+.neutral { border-left: 0.8vw solid #6b7280; }
+
+/* TEXT DINS CARD */
+.card strong {
+    font-size: 3vh;
+}
+
+.small {
+    opacity: 0.8;
+    font-size: 2vh;
+}
+
+/* ===== RESPONSIVE FINA ===== */
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 3vh;
+    }
+
+    .scoreboard {
+        font-size: 2.5vh;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER / MARCADOR -->
+    <div class="header">
+        <div class="title"> <span style="padding-right:10px;"><img src="https://lacreualtallampsitrons.cat/media/website/LOGOTIP-removebg-preview.png" style="width:4vh;"></img></span>Llamps i Trons</div>
+
+        <div class="scoreboard">
+            <div class="llampsText">⚡ <span id="llampsTotal">0</span></div>
+            <div class="tronsText">🌩 <span id="tronsTotal">0</span></div>
+        </div>
+    </div>
+
+    <!-- TESSEL·LES -->
+    <div id="grid" class="grid"></div>
+
+</div>
+
+<script>
+
+async function loadData() {
+    try {
+        const url = `https://lacreualtallampsitrons.cat/comptador/data.json?t=${Date.now()}`;
+        const res = await fetch(url);
+        const data = await res.json();
+
+        let llampPoints = 0;
+        let troPoints = 0;
+
+        const grid = document.getElementById('grid');
+        grid.innerHTML = '';
+
+        data.elements.forEach(el => {
+
+            const points = Number(el.points) || 0;
+            const winner = el.winner;
+
+            if (winner === 'Llamps') llampPoints += points;
+            else if (winner === 'Trons') troPoints += points;
+            else if (winner === 'Empat') {
+                llampPoints += points;
+                troPoints += points;
+            }
+
+            // CARD
+            const card = document.createElement('div');
+
+            let cls = 'neutral';
+            if (winner === 'Llamps') cls = 'llamps';
+            else if (winner === 'Trons') cls = 'trons';
+            else if (winner === 'Empat') cls = 'empatat';
+            else if (winner === 'Anul·lat') cls = 'anullat';
+
+            card.className = `card ${cls}`;
+
+            card.innerHTML = `
+                <strong>${el.title}</strong>
+                <div class="small">Punts: ${points}</div>
+                <div class="small">${winner}</div>
+            `;
+
+            grid.appendChild(card);
+        });
+
+        // MARCADOR
+        document.getElementById('llampsTotal').textContent = llampPoints;
+        document.getElementById('tronsTotal').textContent = troPoints;
+
+    } catch (err) {
+        console.error('Error carregant dades:', err);
+    }
+}
+
+loadData();
+setInterval(loadData, 20000);
+
+</script>
+
+</body>
+</html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
+<link rel="shortcut icon" href="https://lacreualtallampsitrons.cat/media/website/LOGOTIP-removebg-preview.png" type="image/png">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -34,6 +35,10 @@ body{
     color:var(--text);
     min-height:100vh;
     padding:24px;
+}
+
+a{
+    color:var(--muted);
 }
 
 .container{
@@ -122,6 +127,7 @@ button:hover{
 .btn-warning{
     background:var(--warning);
     color:white;
+    margin-left: auto;
 }
 
 .move-buttons{
@@ -257,9 +263,9 @@ select:focus{
 
     <div class="header">
         <div>
-            <h1>Editor de proves</h1>
+            <h1>Editor Marcador FM</h1>
             <div class="subtitle">
-                Editor JSON amb GitHub API
+                Editor del JSON de les proves amb GitHub API. <br><br><i><b>NOTA:</b> Cal configurar abans el document ght.txt correctament amb <a href="/encriptador.html" target="_Blank">l'encriptador</a>.</i>
             </div>
         </div>
     </div>
@@ -269,7 +275,7 @@ select:focus{
         <div class="toolbar">
 
             <button class="btn-primary" id="loadBtn">
-                Accedir a l'edició
+                Carregar informació
             </button>
 
             <button class="btn-secondary" id="addBtn">
@@ -367,7 +373,7 @@ function updateStatus(text){
 
 async function loadEncryptedToken(){
 
-    const res = await fetch("https://lacreualtallampsitrons.cat/ght.txt");
+    const res = await fetch("/ght.txt");
 
     if(!res.ok){
         throw new Error("No s'ha pogut llegir ght.txt");

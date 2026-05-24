@@ -292,6 +292,18 @@ select:focus{
 
         </div>
 
+        <div class="status">
+
+            <div id="statusText">
+                Sense carregar
+            </div>
+
+            <div id="dirtyText">
+                Sense canvis
+            </div>
+
+        </div>
+
         <div class="table-wrapper">
 
             <table id="jsonTable">
@@ -312,18 +324,6 @@ select:focus{
             </table>
 
             <div id="mobileList"></div>
-
-        </div>
-
-        <div class="status">
-
-            <div id="statusText">
-                Sense carregar
-            </div>
-
-            <div id="dirtyText">
-                Sense canvis
-            </div>
 
         </div>
 
@@ -374,7 +374,7 @@ function updateStatus(text){
 
 async function loadEncryptedToken(){
 
-    const res = await fetch("/ght.txt");
+    const res = await fetch("https://lacreualtallampsitrons.cat/ght.txt");
 
     if(!res.ok){
         throw new Error("No s'ha pogut llegir ght.txt");

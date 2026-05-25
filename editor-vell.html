@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Comptador Editor</title>
+
+<style>
+body{font-family:Arial;padding:20px;}
+table{border-collapse:collapse;width:100%;margin-top:10px;}
+th,td{border:1px solid #ccc;padding:8px;}
+input,select{width:100%;}
+button{margin:5px;padding:8px 12px;}
+</style>
+</head>
+
+<body>
+
+<h1>Editor de proves</h1>
+
+<button onclick="fetchJSON()">Load JSON</button>
+
+<table id="jsonTable">
+<thead>
+<tr>
+<th>Title</th>
+<th>Points</th>
+<th>Winner</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<button onclick="addRow()">Add Row</button>
+<button onclick="resetStatus()">Reset status</button>
+<button onclick="saveJSON()">Save</button>
+
+<script>
+
+const repo="cj-llampsitrons/comptador";
+const path="data.json";
+const branch="main";
+
+let elements=[];
+let sha="";
+let token="";
+
+const winners=[
+  "Trons",
+  "Llamps",
+  "Anul·lat",
+  "Per disputar",
+  "Sense puntuació",
+  "Empat",
+  "Sense guanyador"
+];
+
+// Funció per llegir el token encriptat des de ght.txt
+async function loadEncryptedToken(){
+    const res = await fetch('/ght.txt');
+    if(!res.ok) throw new Error("No s'ha pogut llegir ght.txt");
+    return res.text();
+}
+
+async function unlockToken(){
+
+    const ENCRYPTED_TOKEN = await loadEncryptedToken();
+
+    const stored = JSON.parse(atob(ENCRYPTED_TOKEN));
+    const password = prompt("Password");
+
+    const enc = new TextEncoder();
+    const dec = new TextDecoder();
+
+    const keyMaterial = await crypto.subtle.importKey(
+        "raw",
+        enc.encode(password),
+        "PBKDF2",
+        false,
+        ["deriveKey"]
+    );
+
+    const key = await crypto.subtle.deriveKey(
+        {
+            name: "PBKDF2",
+            salt: enc.encode("github-editor"),
+            iterations: 100000,
+            hash: "SHA-256"
+        },
+        keyMaterial,
+        { name: "AES-GCM", length: 256 },
+        false,
+        ["decrypt"]
+    );
+
+    const decrypted = await crypto.subtle.decrypt(
+        { name: "AES-GCM", iv: new Uint8Array(stored.iv) },
+        key,
+        new Uint8Array(stored.data)
+    );
+
+    token = dec.decode(decrypted);
+
+}
+
+function decodeBase64UTF8(str){
+    const bytes=atob(str).split('').map(c=>c.charCodeAt(0));
+    return new TextDecoder().decode(new Uint8Array(bytes));
+}
+
+function encodeBase64UTF8(str){
+    return btoa(unescape(encodeURIComponent(str)));
+}
+
+async function fetchJSON(){
+
+    if(!token) await unlockToken();
+
+    const url=`https://api.github.com/repos/${repo}/contents/${path}?ref=${branch}&nocache=${Date.now()}`;
+
+    const res=await fetch(url,{
+        headers:{Authorization:`token ${token}`}
+    });
+
+    const data=await res.json();
+
+    sha=data.sha;
+
+    elements=JSON.parse(
+        decodeBase64UTF8(data.content)
+    ).elements;
+
+    renderTable();
+
+}
+
+function renderTable(){
+
+    const tbody=document.querySelector("#jsonTable tbody");
+    tbody.innerHTML="";
+
+    elements.forEach((el,i)=>{
+
+        const row=document.createElement("tr");
+
+        const opts=winners.map(w=>
+            `<option value="${w}" ${w===el.winner?'selected':''}>${w}</option>`
+        ).join("");
+
+        row.innerHTML=`
+            <td><input value="${el.title}"></td>
+            <td><input type="number" value="${el.points}" min="0"></td>
+            <td><select>${opts}</select></td>
+            <td><button onclick="removeRow(${i})">Remove</button></td>
+        `;
+
+        tbody.appendChild(row);
+
+    });
+
+}
+
+function addRow(){
+
+    elements.push({
+        title:"",
+        points:0,
+        winner:"Per disputar"
+    });
+
+    renderTable();
+
+}
+
+function removeRow(i){
+
+    elements.splice(i,1);
+    renderTable();
+
+}
+
+function resetStatus(){
+
+    if(!confirm("Reset all winners to 'Per disputar'?")) return;
+
+    elements=elements.map(e=>({...e,winner:"Per disputar"}));
+
+    renderTable();
+
+}
+
+function updateElements(){
+
+    const rows=document.querySelectorAll("#jsonTable tbody tr");
+
+    elements=[...rows].map(r=>({
+
+        title:r.cells[0].querySelector("input").value,
+        points:parseInt(r.cells[1].querySelector("input").value)||0,
+        winner:r.cells[2].querySelector("select").value
+
+    }));
+
+}
+
+async function saveJSON(){
+
+    updateElements();
+
+    const body={
+        message:"Update data.json",
+        content:encodeBase64UTF8(JSON.stringify({elements},null,2)),
+        sha:sha,
+        branch:branch
+    };
+
+    const res=await fetch(
+        `https://api.github.com/repos/${repo}/contents/${path}`,
+        {
+            method:"PUT",
+            headers:{
+                Authorization:`token ${token}`,
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(body)
+        }
+    );
+
+    const result=await res.json();
+
+    if(result.content){
+
+        sha=result.content.sha;
+
+        alert("Saved");
+
+        setTimeout(fetchJSON,1000);
+
+    }else{
+
+        alert(JSON.stringify(result));
+
+    }
+
+}
+
+</script>
+</body>
+</html>
